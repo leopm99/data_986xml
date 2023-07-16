@@ -331,6 +331,7 @@
 		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="false" />
 		<dropLists>
 			<death>
+				<item id="21919" min="1" max="1" chance="21.2817" /> <!-- Hellblade -->
 				<group chance="58.951698303222656">
 					<item id="6367" min="1" max="1" chance="1.2817" /> <!-- Angel Slayer -->
 					<item id="6691" min="3" max="9" chance="98.7183" /> <!-- Angel Slayer Blade -->
