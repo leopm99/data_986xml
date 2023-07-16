@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../xsd/skills.xsd">
+	<skill id="40000" levels="1" name="Blessed Gate">
+		<set name="hitTime" val="15000" />
+		<set name="icon" val="icon.skill1429" />
+		<set name="isMagic" val="1" /> <!-- Magic Skill -->
+		<set name="itemConsumeCount" val="4" />
+		<set name="itemConsumeId" val="8615" />
+		<set name="magicLvl" val="78" />
+		<set name="mpConsume" val="57" />
+		<set name="mpInitialConsume" val="227" />
+		<set name="operateType" val="A1" />
+		<set name="reuseDelay" val="60000" />
+		<set name="staticReuse" val="true" />
+		<set name="targetType" val="SELF" />
+		<cond>
+			<player callPc="true" />
+		</cond>
+		<cond msgId="113" addName="1">
+			<not>
+				<player insideZoneId="10501, 10502, 10503" />
+			</not>
+		</cond>
+		<for>
+			<effect name="CallParty" noicon="1" />
+		</for>
+	</skill>
+</list>

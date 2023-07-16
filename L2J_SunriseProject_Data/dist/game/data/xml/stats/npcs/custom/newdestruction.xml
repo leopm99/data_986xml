@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../xsd/npcs.xsd">
+<npc id="38001" displayId="29054" level="85" name="Venom" usingServerSideName="true" title="Lord of Destruction" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- TODO: Must be confirmed -->
+		<parameters>			
+			<param name="RaidSpawnMusic" value="Rm03_A" />
+			<skill name="DDMagic_a" id="4195" level="9" /> <!-- BOSS Twister -->
+			<skill name="SelfRangeDebuff_a" id="4184" level="9" /> <!-- Decrease Atk. Spd. -->
+			<skill name="SelfRangeDebuffAnother_a" id="4188" level="9" /> <!-- Bleed -->
+			<skill name="PhysicalSpecial" id="4993" level="1" /> <!-- Venom - Strike -->
+			<skill name="DDMagic" id="4994" level="1" /> <!-- Venom - Sonic Storm -->
+			<skill name="SelfRangeCancel_a1" id="4995" level="1" /> <!-- Venom - Teleport -->
+			<skill name="SelfRangeCancel_a2" id="4996" level="1" /> <!-- Venom - Range Teleport -->
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="8222" /> <!-- rhand: Monster Only (Follower of Frintezza Tran Calibur) -->
+		<acquire sp="5557272" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="4000327.053711" hpRegen="92.338763" mp="1674.8" mpRegen="3" />
+			<attack physical="14045.33275" magical="5280.52214" attackSpeed="253" range="40" />
+			<defence physical="6024.125" magical="2499.6" />
+			<attribute>
+				<defence fire="300" water="300" wind="300" earth="300" holy="300" dark="300" />
+			</attribute>
+			<speed>
+				<walk ground="36" />
+				<run ground="190" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4184" level="9" /> <!--Decrease Atk. Spd. -->
+			<skill id="4188" level="9" /> <!--Bleed -->
+			<skill id="4195" level="9" /> <!--BOSS Twister -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="6" /> <!--Blunt Weapons -->
+			<skill id="4416" level="6" /> <!--Humanoids -->
+			<skill id="4494" level="1" /> <!--Raid Boss -->
+			<skill id="4907" level="1" /> <!--Raid Boss - Level 80 -->
+		</skillList>
+		<ai type="BALANCED" clanHelpRange="300" />
+		<dropLists>
+			<death>				
+				<item id="10297" min="1" max="1" chance="10" /> <!-- Transformation Sealbook: Venom -->				
+				<item id="6674" min="1" max="1" chance="0.819402108" /> <!-- Sealed Imperial Crusader Breastplate -->
+				<item id="6675" min="1" max="1" chance="1.3111089512" /> <!-- Sealed Imperial Crusader Gaiters -->
+				<item id="6701" min="8" max="22" chance="18.5866891768" /> <!-- Sealed Imperial Crusader Breastplate Part -->
+				<item id="6702" min="4" max="12" chance="44.861199764" /> <!-- Sealed Imperial Crusader Gaiters Pattern -->
+				<item id="6367" min="1" max="1" chance="0.7347704126" /> <!-- Angel Slayer -->
+				<item id="6691" min="3" max="9" chance="56.5930295874" /> <!-- Angel Slayer Blade -->
+				<item id="959" min="6" max="12" chance="50.7151629088" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+				<item id="960" min="6" max="18" chance="50.1516897268" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				<item id="22221" min="3" max="6" chance="40.4525473644" /> <!-- Scroll: Enchant Weapon of Destruction (S-Grade) - Event -->				
+				<item id="22222" min="3" max="9" chance="40.4525473644" /> <!-- Scroll: Enchant Armor of Destruction (S-Grade) - Event -->
+			</death>
+		</dropLists>
+		<collision>
+			<radius normal="20" />
+			<height normal="56" />
+		</collision>
+	</npc>
+	<npc id="38002" displayId="25527" level="85" name="Lord Uruka" usingServerSideName="true" title="Lord of Destruction" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- TODO: Must be confirmed -->
+		<parameters>			
+			<param name="RaidSpawnMusic" value="Rm03_A" />
+			<skill name="SelfRangeCancel_a" id="4177" level="10" /> <!-- BOSS Cancel Magic -->
+			<skill name="SelfBuff_a" id="4173" level="10" /> <!-- BOSS Might -->
+			<skill name="PhysicalSpecial_a" id="4721" level="10" /> <!-- BOSS Strike -->
+			<skill name="SelfRangePhysicalSpecial_a" id="4172" level="10" /> <!-- Stun -->
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="6716" /> <!-- rhand: Monster Only(Silenos Shaman) -->
+		<acquire sp="557272" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="4000327.053711" hpRegen="92.338763" mp="1674.8" mpRegen="3" />
+			<attack physical="14045.33275" magical="5280.52214" attackSpeed="253" range="40" />
+			<defence physical="6024.125" magical="2499.6" />
+			<attribute>
+				<defence fire="300" water="300" wind="300" earth="300" holy="300" dark="300" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="190" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4184" level="9" /> <!--Decrease Atk. Spd. -->
+			<skill id="4188" level="9" /> <!--Bleed -->
+			<skill id="4195" level="9" /> <!--BOSS Twister -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="6" /> <!--Blunt Weapons -->
+			<skill id="4416" level="6" /> <!--Humanoids -->
+			<skill id="4494" level="1" /> <!--Raid Boss -->
+			<skill id="4907" level="1" /> <!--Raid Boss - Level 80 -->
+		</skillList>
+		<ai type="BALANCED" clanHelpRange="300" />
+		<dropLists>
+			<death>								
+				<item id="6724" min="1" max="1" chance="5.9961" /> <!-- Sealed Tateossian Earring -->
+				<item id="6725" min="1" max="1" chance="8.9942" /> <!-- Sealed Tateossian Ring -->
+				<item id="6726" min="1" max="1" chance="4.4961" /> <!-- Sealed Tateossian Necklace -->
+				<item id="6698" min="81" max="243" chance="11.8869" /> <!-- Sealed Tateossian Earring Part -->
+				<item id="6699" min="40" max="120" chance="26.71" /> <!-- Sealed Tateossian Ring Gem -->
+				<item id="6700" min="14" max="42" chance="41.9167" /> <!-- Sealed Tateossian Necklace Chain -->
+				<item id="6365" min="1" max="1" chance="0.3713" /> <!-- Basalt Battlehammer -->
+				<item id="6366" min="1" max="1" chance="0.3713" /> <!-- Imperial Staff -->
+				<item id="6369" min="1" max="1" chance="0.3713" /> <!-- Dragon Hunter Axe -->
+				<item id="6579" min="1" max="1" chance="0.3713" /> <!-- Arcana Mace -->
+				<item id="6689" min="2" max="6" chance="42.0931" /> <!-- Basalt Battlehammer Head -->
+				<item id="6690" min="11" max="31" chance="8.1873" /> <!-- Imperial Staff Head -->
+				<item id="6693" min="6" max="18" chance="14.5597" /> <!-- Dragon Hunter Axe Blade -->
+				<item id="6697" min="3" max="7" chance="33.6747" /> <!-- Arcana Mace Head -->
+				<item id="959" min="6" max="12" chance="50.7151629088" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+				<item id="960" min="6" max="18" chance="50.1516897268" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				<item id="22221" min="3" max="6" chance="40.4525473644" /> <!-- Scroll: Enchant Weapon of Destruction (S-Grade) - Event -->				
+				<item id="22222" min="3" max="9" chance="40.4525473644" /> <!-- Scroll: Enchant Armor of Destruction (S-Grade) - Event -->
+			</death>
+		</dropLists>
+		<collision>
+			<radius normal="30" />
+			<height normal="42.5105" />
+		</collision>		
+	</npc>
+	<npc id="38003" displayId="25205" level="85" type="L2RaidBoss" name="Ocean Flame Ashakiel" usingServerSideName="true" title="Lord of Destruction" usingServerSideTitle="true">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<minions name="Privates">
+				<npc id="38004" count="1" respawnTime="360" weightPoint="1" /> <!-- Ashakiel's Blade -->
+				<npc id="38005" count="4" respawnTime="360" weightPoint="1" /> <!-- Ashakiel's Rod -->
+			</minions>
+			<param name="RaidSpawnMusic" value="Rm01_A" />
+			<param name="doSummonNPC" value="1" />
+			<skill name="DDMagic_a" id="4193" level="8" /> <!-- BOSS Life Drain -->
+			<skill name="SelfRangeDebuff_a" id="4183" level="8" /> <!-- Decrease P. Atk. -->
+			<skill name="SelfRangeDebuffAnother_a" id="4189" level="8" /> <!-- Paralysis -->
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="98" /> <!-- rhand: Halberd -->
+		<acquire expRate="911.895382260085" sp="1171763" raidPoints="3228" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="4018860.766608773" hpRegen="124.302529182249" mp="1540.8" mpRegen="3" />
+			<attack physical="25010.79548333906" magical="8880.048862829437" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="9710.35365" magical="4730.86" evasion="-18" />
+			<attribute>
+				<defence fire="300" water="300" wind="300" earth="300" holy="300" dark="300" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="170" />
+			</speed>
+			<hitTime>760</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4183" level="8" /> <!--Decrease P. Atk. -->
+			<skill id="4189" level="8" /> <!--Paralysis -->
+			<skill id="4193" level="8" /> <!--BOSS Life Drain -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="8" /> <!--Angels -->
+			<skill id="4494" level="1" /> <!--Raid Boss -->
+			<skill id="4988" level="1" /> <!--Raid Boss - Level 76 -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" clanHelpRange="300" isAggressive="false" />
+		<dropLists>
+			<death>				
+				<item id="6678" min="1" max="1" chance="31.4624" /> <!-- Sealed Imperial Crusader Shield -->
+				<item id="6679" min="1" max="1" chance="22.023" /> <!-- Sealed Imperial Crusader Helmet -->
+				<item id="6683" min="1" max="1" chance="22.023" /> <!-- Sealed Draconic Leather Helmet -->
+				<item id="6687" min="1" max="1" chance="22.023" /> <!-- Sealed Major Arcana Circlet -->
+				<item id="6371" min="1" max="1" chance="2.4686" /> <!-- Demon Splinter -->				
+				<item id="6705" min="315" max="945" chance="4.8073" /> <!-- Sealed Imperial Crusader Shield Part -->
+				<item id="6706" min="66" max="198" chance="26.6885" /> <!-- Sealed Imperial Crusader Helmet Pattern -->
+				<item id="6710" min="126" max="378" chance="13.9797" /> <!-- Sealed Draconic Leather Helmet Pattern -->
+				<item id="6714" min="208" max="624" chance="8.4685" /> <!-- Sealed Major Arcana Circlet Pattern -->
+				<item id="6695" min="5" max="15" chance="46.056" /> <!-- Demon Splinter Blade -->				
+				<item id="6578" min="1" max="1" chance="15.0943" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
+				<item id="3936" min="1" max="3" chance="84.9057" /> <!-- Blessed Scroll of Resurrection -->
+				<item id="959" min="6" max="12" chance="50.7151629088" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+				<item id="960" min="6" max="18" chance="50.1516897268" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				<item id="22221" min="3" max="6" chance="40.4525473644" /> <!-- Scroll: Enchant Weapon of Destruction (S-Grade) - Event -->				
+				<item id="22222" min="3" max="9" chance="40.4525473644" /> <!-- Scroll: Enchant Armor of Destruction (S-Grade) - Event -->			
+			</death>
+		</dropLists>
+		<collision>
+			<radius normal="22" />
+			<height normal="120" />
+		</collision>
+	</npc>
+	<npc id="38004" displayId="25206" level="75" type="L2Monster" name="Ashakiel's Blade" usingServerSideName="true" title="Follower of Destruction" usingServerSideTitle="true">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="PhysicalSpecial_a" id="4729" level="8" /> <!-- BOSS Mortal Blow -->
+		</parameters>
+		<race>DIVINE</race>
+		<sex>FEMALE</sex>
+		<equipment rhand="6717" /> <!-- rhand: Monster Only(Einhasad Warrior) -->
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="63589.9602304145" hpRegen="123.216289543832" mp="1507.8" mpRegen="3" />
+			<attack physical="9804.8939216752" magical="13902.0164290252" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="478.869345" magical="467.22" evasion="-18" />
+			<attribute>
+				<defence fire="300" water="300" wind="300" earth="300" holy="300" dark="300" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="170" />
+			</speed>
+			<hitTime>460</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="4" /> <!--One-handed Sword -->
+			<skill id="4416" level="8" /> <!--Angels -->
+			<skill id="4729" level="8" /> <!--BOSS Mortal Blow -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="8" grown="9" />
+			<height normal="30" grown="36.5" />
+		</collision>
+	</npc>
+	<npc id="38005" displayId="25207" level="75" type="L2Monster" name="Ashakiel's Rod" usingServerSideName="true" title="Follower of Destruction" usingServerSideTitle="true">
+		<!-- Confirmed CT2.5 -->
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="6718" /> <!-- rhand: Monster Only(Einhasad Shaman) -->
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="31794.9801152072" hpRegen="123.216289543832" mp="1507.8" mpRegen="3" />
+			<attack physical="4902.4469608376" magical="3475.50410725631" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="478.869345" magical="467.22" evasion="-18" />
+			<attribute>
+				<defence fire="300" water="300" wind="300" earth="300" holy="300" dark="300" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="170" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="3" /> <!--Light Armor Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="8" /> <!--Angels -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="MAGE" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="11" grown="13" />
+			<height normal="38.5" grown="46.5" />
+		</collision>
+	</npc>	
+</list>
