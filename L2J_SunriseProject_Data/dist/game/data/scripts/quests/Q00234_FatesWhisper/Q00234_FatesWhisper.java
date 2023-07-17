@@ -160,22 +160,22 @@ public final class Q00234_FatesWhisper extends Quest
 		{
 			case COFFER_OF_THE_DEAD:
 			{
-				startQuestTimer("23401", 1000 * 120, npc, null);
+				startQuestTimer("23401", 1000 * 600, npc, null);
 				break;
 			}
 			case CHEST_OF_KERNON:
 			{
-				startQuestTimer("23402", 1000 * 120, npc, null);
+				startQuestTimer("23402", 1000 * 600, npc, null);
 				break;
 			}
 			case CHEST_OF_HALLATE:
 			{
-				startQuestTimer("23403", 1000 * 120, npc, null);
+				startQuestTimer("23403", 1000 * 600, npc, null);
 				break;
 			}
 			case CHEST_OF_GOLKONDA:
 			{
-				startQuestTimer("23404", 1000 * 120, npc, null);
+				startQuestTimer("23404", 1000 * 600, npc, null);
 				break;
 			}
 		}

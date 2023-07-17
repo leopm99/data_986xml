@@ -118,8 +118,8 @@ public class Q00146_TheZeroHour extends Quest
 				}
 				else
 				{
-					st.giveItems(KAHMANS_SUPPLY_BOX, 1);
-					st.addExpAndSp(154616, 12500);
+					st.giveItems(KAHMANS_SUPPLY_BOX, 50);
+					st.addExpAndSp(15461600, 1250000);
 					st.exitQuest(false, true);
 					htmltext = "31554-05.html";
 				}

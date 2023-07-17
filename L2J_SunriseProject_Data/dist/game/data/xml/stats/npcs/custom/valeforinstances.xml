@@ -1,0 +1,2056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../xsd/npcs.xsd">
+<npc id="38100" displayId="22844" level="85" name="Molron" usingServerSideName="true" title="Behemoth's Guard" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6763" level="1" /> <!-- Dragon Earth Strike -->
+			<skill name="Skill02_ID" id="6761" level="1" /> <!-- Dragon Blow Strike -->
+		</parameters>
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<acquire expRate="81.3706812825836" sp="58916" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="18605.9337557173" hpRegen="187.410040552143" mp="1846.8" mpRegen="3" />
+			<attack physical="10327.681831868" magical="7052.46788014386" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="578.861024" magical="635.378064" />
+			<attribute>
+				<attack type="EARTH" value="250" />
+				<defence fire="220" water="220" wind="170" earth="250" holy="220" dark="220" default="230" />
+			</attribute>
+			<speed>
+				<walk ground="43" />
+				<run ground="170" />
+			</speed>
+			<hitTime>420</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="13" /> <!--Slightly Strong P. Atk. -->
+			<skill id="4411" level="16" /> <!--Very Strong M. Atk. -->
+			<skill id="4412" level="15" /> <!--Strong P. Def. -->
+			<skill id="4413" level="4" /> <!--Extremely Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="10" /> <!--Dragons -->
+			<skill id="5465" level="1" /> <!--Earth Attacks -->
+			<skill id="6761" level="1" /> <!--Dragon Blow Strike -->
+			<skill id="6763" level="1" /> <!--Dragon Earth Strike -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>3</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>DRAGON_IN</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="20" />
+			<height normal="36" />
+		</collision>
+	</npc>	
+	<npc id="38101" displayId="22852" level="85" name="Behemoth" usingServerSideName="true" title="King" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6768" level="1" /> <!-- Stun Attack -->
+		</parameters>
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<acquire expRate="1420.73744984083" sp="1003445" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="55817.8012671518" hpRegen="187.410040552143" mp="1846.8" mpRegen="3" />
+			<attack physical="12008.0135566142" magical="8707.81891430402" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="578.861024" magical="635.378064" />
+			<attribute>
+				<attack type="EARTH" value="350" />
+				<defence fire="350" water="350" wind="350" earth="350" holy="350" dark="350" default="350" />
+			</attribute>
+			<speed>
+				<walk ground="100" />
+				<run ground="200" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="16" /> <!--Very Strong P. Atk. -->
+			<skill id="4411" level="15" /> <!--Strong M. Atk. -->
+			<skill id="4412" level="16" /> <!--Very Strong P. Def. -->
+			<skill id="4413" level="5" /> <!--Very Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="11" /> <!--Spears -->
+			<skill id="4416" level="10" /> <!--Dragons -->
+			<skill id="5465" level="1" /> <!--Earth Attacks -->
+			<skill id="6768" level="1" /> <!--Stun Attack -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>DRAGON_IN</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="40" />
+			<height normal="55" />
+		</collision>
+	</npc>	
+	<npc id="38102" displayId="22853" level="85" name="Gutter" usingServerSideName="true" title="Behemoth's Magician" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6769" level="1" /> <!-- Petrify -->
+			<skill name="Skill02_ID" id="6770" level="1" /> <!-- Heal -->
+		</parameters>
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<equipment rhand="13981" /> <!-- rhand: Exclusive to Monsters (Mounted Troops Tactics) -->
+		<acquire expRate="75.9364192249135" sp="57848" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="55817.8012671518" hpRegen="187.410040552143" mp="1846.8" mpRegen="3" />
+			<attack physical="12008.0135566142" magical="8707.81891430402" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="578.861024" magical="635.378064" />
+			<attribute>
+				<attack type="EARTH" value="250" />
+				<defence fire="220" water="220" wind="170" earth="250" holy="220" dark="220" default="230" />
+			</attribute>
+			<speed>
+				<walk ground="82" />
+				<run ground="170" />
+			</speed>
+			<hitTime>480</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="15" /> <!--Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!--Slightly Strong M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="8" /> <!--Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="10" /> <!--Dragons -->
+			<skill id="5465" level="1" /> <!--Earth Attacks -->
+			<skill id="6769" level="1" /> <!--Petrify -->
+			<skill id="6770" level="1" /> <!--Heal -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>DRAGON_IN</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="25" />
+			<height normal="34.5" />
+		</collision>
+	</npc>
+	
+	<npc id="38103" displayId="22855" level="85" name="Grinder" usingServerSideName="true" title="Behemoth's Scout" usingServerSideTitle="true" type="L2Monster">	
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6774" level="1" /> <!-- Stun Attack -->
+			<skill name="Skill02_ID" id="6775" level="1" /> <!-- Soul Breath -->
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire expRate="83.0193732963764" sp="62855" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="333456.112945616" hpRegen="185.531972616358" mp="1881.8" mpRegen="3" />
+			<attack physical="10714.2988085721" magical="7316.4772660902" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="584.99232" magical="642.108" />
+			<attribute>
+				<attack type="DARK" value="270" />
+				<defence fire="240" water="240" wind="240" earth="240" holy="190" dark="270" default="250" />
+			</attribute>
+			<speed>
+				<walk ground="25" />
+				<run ground="230" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="8" /> <!--HP Increase (1/4x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="19" /> <!--Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!--Extremely Strong M. Atk. -->
+			<skill id="4412" level="19" /> <!--Extremely Strong P. Def. -->
+			<skill id="4413" level="5" /> <!--Very Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="9" /> <!--Demons -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5598" level="12" /> <!--Flash Resistance -->
+			<skill id="6774" level="1" /> <!--Stun Attack -->
+			<skill id="6775" level="1" /> <!--Soul Breath -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>0.25</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="500" clanHelpRange="500">
+			<clanList>
+				<clan>DRAGON_IN</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="30" />
+			<height normal="43" />
+		</collision>
+	</npc>	
+	<npc id="38104" displayId="20639" level="85" name="Core" usingServerSideName="true" title="Behemoth Jewel" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="60" />
+			<param name="MoveAroundSocial1" value="60" />
+			<param name="MoveAroundSocial2" value="60" />
+			<skill name="CheckMagic" id="4046" level="4" /> <!-- Sleep -->
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="DDMagic" id="4039" level="4" /> <!-- NPC MP Drain -->
+			<skill name="CancelMagic" id="4094" level="4" /> <!-- NPC Cancel Magic -->
+			<skill name="SleepMagic" id="4046" level="4" /> <!-- Sleep -->
+		</parameters>
+		<race>FAIRY</race>
+		<sex>MALE</sex>
+		<acquire expRate="4.2525492" sp="755" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1372.18568" hpRegen="5.5" mp="720.0" mpRegen="2.1" />
+			<attack physical="290.44588" magical="198.33688" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="195.66302" magical="130.274648808072" />
+			<attribute>
+				<defence fire="20" water="20" wind="53" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="174" />
+			</speed>
+			<hitTime>390</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4039" level="4" /> <!--NPC MP Drain -->
+			<skill id="4046" level="4" /> <!--Sleep -->
+			<skill id="4094" level="4" /> <!--NPC Cancel Magic -->
+			<skill id="4095" level="1" /> <!--Damage Shield -->
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="10" /> <!--Slightly Weak P. Atk. -->
+			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
+			<skill id="4412" level="12" /> <!--Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!--Slightly Strong M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="13" /> <!--Fairies -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="1000" clanHelpRange="300" isAggressive="false">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="26" />
+			<height normal="52" />
+		</collision>
+	</npc>	
+	<npc id="38105" displayId="30358" level="85" name="Durander" usingServerSideName="true" title="*Epic Missions*" usingServerSideTitle="true" type="L2VillageMasterDElf">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="180" />
+		</parameters>
+		<race>DARK_ELF</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="688.86373" magical="470.40463" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="295.91597" magical="216.53847" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status attackable="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="16" /> <!--Dark Elves -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="1000" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="6" />
+			<height normal="23.8" />
+		</collision>
+	</npc>
+	<npc id="38106" displayId="20088" level="85" name="Powerful Ant" usingServerSideName="true" title="Queen's Guard" usingServerSideTitle="true" type="L2Monster">	
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="100" />
+			<param name="MoveAroundSocial1" value="100" />
+			<param name="MoveAroundSocial2" value="100" />
+			<param name="AttackLowHP" value="1" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Buff" id="4074" level="2" /> <!-- NPC Haste -->
+		</parameters>
+		<race>BUG</race>
+		<sex>MALE</sex>
+		<acquire expRate="3.6753708" sp="288" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="809.52639" hpRegen="4.5" mp="417.6" mpRegen="1.8" />
+			<attack physical="137.86467" magical="94.1437" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="140.57278" magical="93.5949427192352" />
+			<attribute>
+				<defence fire="-5" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="174" />
+			</speed>
+			<hitTime>610</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4074" level="2" /> <!--NPC Haste -->
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
+			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="12" /> <!--Bugs -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="1000" clanHelpRange="300">
+			<clanList>
+				<clan>ANT</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="35" grown="42" />
+			<height normal="17" grown="21" />
+		</collision>
+	</npc>	
+	<npc id="38107" displayId="21273" level="85" name="Noble Ant" usingServerSideName="true" title="Queen's Guard" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="IsTransform" value="3" />
+			<param name="step1" value="21271" /> <!-- Cave Ant -->
+			<param name="step2" value="21272" /> <!-- Cave Ant Soldier -->
+			<param name="step3" value="21273" /> <!-- Cave Noble Ant -->
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="SelfRangeDDMagic" id="4072" level="3" /> <!-- Stun -->
+			<skill name="SelfBuff" id="4091" level="1" /> <!-- NPC Ogre Spirit Totem -->
+			<skill name="PhysicalSpecial" id="4032" level="3" /> <!-- NPC Strike -->
+		</parameters>
+		<race>BUG</race>
+		<sex>MALE</sex>
+		<acquire expRate="9.3383736" sp="902" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="925.85879" hpRegen="4.5" mp="463.32" mpRegen="1.8" />
+			<attack physical="166.06476" magical="113.4007" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="152.46752" magical="101.514599764346" />
+			<attribute>
+				<defence fire="-5" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="174" />
+			</speed>
+			<hitTime>300</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="3" /> <!--NPC Strike -->
+			<skill id="4072" level="3" /> <!--Stun -->
+			<skill id="4085" level="1" /> <!--Critical Damage -->
+			<skill id="4086" level="1" /> <!--Critical Chance -->
+			<skill id="4091" level="1" /> <!--NPC Ogre Spirit Totem -->
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="12" /> <!--Slightly Strong P. Atk. -->
+			<skill id="4411" level="12" /> <!--Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!--Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!--Slightly Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="12" /> <!--Bugs -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="1000" clanHelpRange="300">
+			<clanList>
+				<clan>ANT</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="20" grown="24" />
+			<height normal="48" grown="57" />
+		</collision>
+	</npc>	
+	<npc id="38108" displayId="21269" level="85" name="Ant Witcher" usingServerSideName="true" title="Queen's Guard" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="120" />
+			<param name="MoveAroundSocial1" value="120" />
+			<param name="MoveAroundSocial2" value="120" />
+			<param name="MaxRoarCount" value="3" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="Fury" id="4317" level="1" /> <!-- Increase Rage Might -->
+		</parameters>
+		<race>BUG</race>
+		<sex>MALE</sex>
+		<acquire expRate="2.952288" sp="248" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="847.31754" hpRegen="4.5" mp="432.72" mpRegen="1.8" />
+			<attack physical="146.82587" magical="100.26304" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="144.47758" magical="96.1948088105753" />
+			<attribute>
+				<defence fire="-5" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="130" />
+			</speed>
+			<hitTime>260</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4317" level="1" /> <!--Increase Rage Might -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="3" /> <!--Light Armor Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="12" /> <!--Bugs -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="1000" clanHelpRange="300">
+			<clanList>
+				<clan>ANT</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="26" />
+			<height normal="15" />
+		</collision>
+	</npc>	
+	<npc id="38109" displayId="18798" level="85" name="Ant Egg" usingServerSideName="true" title="Queen Ant's Cocoon" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="4039.04270539801" hpRegen="8.5" mp="1812.0" mpRegen="3" />
+			<attack physical="1144.73130112535" magical="781.703083407155" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="357.86723" magical="261.87171" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<skillList>
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="2" /> <!--Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="CORPSE" aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="48" />
+			<height normal="27" />
+		</collision>
+	</npc>	
+	<npc id="38110" displayId="29001" level="85" name="Queen Ant" usingServerSideName="true" title="Nest Protector" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- Confirmed CT2.5 -->
+		<race>BUG</race>
+		<sex>FEMALE</sex>
+		<acquire expRate="1362.20985" sp="140740" raidPoints="1680" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="96596" hpRegen="208" mp="300.8" mpRegen="2.1" />
+			<attack physical="105" magical="8" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1252" magical="229" evasion="-18" />
+			<attribute>
+				<attack type="DARK" value="350" />
+				<defence fire="350" water="350" wind="350" earth="350" holy="350" dark="350" default="350" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="230" />
+			</speed>
+			<hitTime>370</hitTime>
+		</stats>
+		<status undying="false" noSleepMode="true" />
+		<skillList>
+			<skill id="4019" level="1" /> <!--Decrease Speed -->
+			<skill id="4021" level="1" /> <!--Queen Ant -->
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="12" /> <!--Bugs -->
+		</skillList>
+		<corpseTime>300</corpseTime>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="2000" clanHelpRange="2000" isAggressive="false">
+			<clanList>
+				<clan>QUEEN_ANT</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="45" />
+			<height normal="53" />
+		</collision>
+	</npc>	
+	<npc id="38111" displayId="22436" level="85" name="Envy" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="101" />
+			<param name="Party_Type" value="1" />
+			<param name="Party_Loyalty" value="2" />
+			<param name="Party_OneShot" value="1" />
+			<param name="PrivateFollowBoss" value="1" />
+			<param name="Skill01_Type" value="2" />
+			<param name="mode" value="1" />
+			<param name="use_skill" value="2" />
+			<skill name="Skill01_ID" id="5523" level="1" /> <!-- Chain Magic - Unholy Castle -->
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>FEMALE</sex>
+		<acquire expRate="5.17350867244077" sp="3714" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="10943.0943982571" hpRegen="111.50705124295" mp="1777.4" mpRegen="3" />
+			<attack physical="7013.14724714075" magical="4872.60072422611" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="595.195674418605" magical="653.307558139535" />
+			<attribute>
+				<attack type="DARK" value="170" />
+				<defence fire="150" water="150" wind="150" earth="150" holy="110" dark="170" default="120" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="3" /> <!--Extremely Weak P. Atk. -->
+			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
+			<skill id="4412" level="4" /> <!--Extremely Weak P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="3" /> <!--Light Armor Type -->
+			<skill id="4415" level="11" /> <!--Spears -->
+			<skill id="4416" level="9" /> <!--Demons -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5523" level="1" /> <!--Chain Magic - Unholy Castle -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="false">
+			<clanList>
+				<clan>CASTLE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="11" />
+			<height normal="34" />
+		</collision>
+	</npc>
+	<npc id="38112" displayId="22438" level="85" name="Gkuttony" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">	
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="102" />
+			<param name="Party_Type" value="1" />
+			<param name="Party_Loyalty" value="2" />
+			<param name="Party_OneShot" value="1" />
+			<param name="PrivateFollowBoss" value="1" />
+			<param name="Skill01_Type" value="1" />
+			<param name="mode" value="1" />
+			<skill name="Skill01_ID" id="5525" level="1" /> <!-- Chain Buff - Resistance to Melee Attacks -->
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire expRate="5.17350867244077" sp="3714" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="10943.0943982571" hpRegen="111.50705124295" mp="1777.4" mpRegen="3" />
+			<attack physical="7013.14724714075" magical="4872.60072422611" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="595.195674418605" magical="653.307558139535" />
+			<attribute>
+				<attack type="DARK" value="170" />
+				<defence fire="150" water="150" wind="150" earth="150" holy="110" dark="170" default="120" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="3" /> <!--Extremely Weak P. Atk. -->
+			<skill id="4411" level="10" /> <!--Slightly Weak M. Atk. -->
+			<skill id="4412" level="4" /> <!--Extremely Weak P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="3" /> <!--Light Armor Type -->
+			<skill id="4415" level="7" /> <!--Daggers -->
+			<skill id="4416" level="9" /> <!--Demons -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5525" level="1" /> <!--Chain Buff - Resistance to Melee Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="false">
+			<clanList>
+				<clan>CASTLE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="15" />
+			<height normal="32.5" />
+		</collision>
+	</npc>	
+	<npc id="38113" displayId="22411" level="85" name="Mucous" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="1" />
+			<param name="Skill01_Probablity" value="1000" />
+			<param name="Skill01_Target" value="3" />
+			<param name="Skill01_AttackSplash" value="1" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Max" value="150" />
+			<param name="Skill02_Probablity" value="5000" />
+			<param name="Skill02_HPTarget" value="0" />
+			<param name="Skill02_HighHP" value="30" />
+			<param name="Skill04_Target" value="3" />
+			<skill name="Skill01_ID" id="5299" level="5" /> <!-- NPC(party) - Physical Range Close Range Attack - Dark -->
+			<skill name="Skill02_ID" id="4654" level="10" /> <!-- NPC Death Link -->
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire expRate="70.2042959387752" sp="47912" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="18734.280667127" hpRegen="190.897045965523" mp="1777.4" mpRegen="3" />
+			<attack physical="10547.7177964874" magical="7328.35281549957" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="595.195674418605" magical="653.307558139535" />
+			<attribute>
+				<attack type="DARK" value="200" />
+				<defence fire="170" water="170" wind="170" earth="170" holy="120" dark="200" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="46" />
+				<run ground="180" />
+			</speed>
+			<hitTime>510</hitTime>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4086" level="1" /> <!--Critical Chance -->
+			<skill id="4408" level="13" /> <!--HP Increase (5x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="8" /> <!--Weak P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="3" /> <!--Light Armor Type -->
+			<skill id="4415" level="11" /> <!--Spears -->
+			<skill id="4416" level="9" /> <!--Demons -->
+			<skill id="4654" level="10" /> <!--NPC Death Link -->
+			<skill id="5299" level="5" /> <!--NPC(party) - Physical Range Close Range Attack - Dark -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5597" level="1" /> <!--Invalid Skill cancel -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>5</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1500" isAggressive="false">
+			<clanList>
+				<clan>CASTLE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="28" />
+			<height normal="52.5" />
+		</collision>
+	</npc>	
+	<npc id="38114" displayId="22412" level="85" name="Moloth" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="1" />
+			<param name="Skill01_Probablity" value="1000" />
+			<param name="Skill01_Target" value="3" />
+			<param name="Skill01_AttackSplash" value="1" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Max" value="150" />
+			<param name="Skill02_Probablity" value="1000" />
+			<param name="Skill03_Probablity" value="1000" />
+			<param name="Skill03_Target" value="3" />
+			<param name="Skill03_Type" value="2" />
+			<param name="Skill03_AttackSplash" value="1" />
+			<param name="Skill03_Check_Dist" value="1" />
+			<param name="Skill03_Dist_Max" value="150" />
+			<param name="Skill04_Target" value="3" />
+			<param name="Skill04_Type" value="2" />
+			<param name="Skill04_AttackSplash" value="1" />
+			<skill name="Skill01_ID" id="5299" level="5" /> <!-- NPC(party) - Physical Range Close Range Attack - Dark -->
+			<skill name="Skill02_ID" id="5304" level="5" /> <!-- Paralysis -->
+			<skill name="Skill03_ID" id="5203" level="11" /> <!-- Fear -->
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<equipment rhand="10278" lhand="10278" /> <!-- rhand: Monster Only (Behamah Dual) lhand: Monster Only (Behamah Dual) -->
+		<acquire expRate="201.40360141288" sp="137882" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="112316.37469612" hpRegen="190.745373183435" mp="1777.4" mpRegen="3" />
+			<attack physical="9273.2997736354" magical="6442.91152041669" random="30" critical="4" accuracy="5" attackSpeed="253" type="DUAL" range="40" distance="80" width="120" />
+			<defence physical="595.195674418605" magical="653.307558139535" />
+			<attribute>
+				<attack type="DARK" value="200" />
+				<defence fire="170" water="170" wind="170" earth="170" holy="120" dark="200" default="170" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="190" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="17" /> <!--Very Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="8" /> <!--Weak P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="1" /> <!--Heavy Armor Type -->
+			<skill id="4415" level="19" /> <!--Dual-Sword Weapons -->
+			<skill id="4416" level="9" /> <!--Demons -->
+			<skill id="4438" level="5" /> <!--Greater Resist Sleep -->
+			<skill id="4439" level="5" /> <!--Greater Resist Hold -->
+			<skill id="4440" level="5" /> <!--Greater Resist Paralysis -->
+			<skill id="5203" level="11" /> <!--Fear -->
+			<skill id="5299" level="5" /> <!--NPC(party) - Physical Range Close Range Attack - Dark -->
+			<skill id="5304" level="5" /> <!--Paralysis -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5597" level="1" /> <!--Invalid Skill cancel -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1500" isAggressive="false">
+			<clanList>
+				<clan>CASTLE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="32" grown="40" />
+			<height normal="46.8" grown="55" />
+		</collision>
+	</npc>	
+	<npc id="38115" displayId="22413" level="85" name="Piece of Evil" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="99" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="1" />
+			<param name="HateClassGroup" value="CLERIC_GROUP" />
+			<param name="HateClassGroupBoost" value="200" />
+			<skill name="Skill01_ID" id="4032" level="10" /> <!-- NPC Strike -->
+			<skill name="Skill02_ID" id="5083" level="4" /> <!-- Stun -->
+			<skill name="Skill03_ID" id="4034" level="10" /> <!-- Decrease Speed -->
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire expRate="78.6665551942711" sp="53798" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="32829.2831947712" hpRegen="111.50705124295" mp="1777.4" mpRegen="3" />
+			<attack physical="5981.54451308138" magical="4155.86285291724" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="595.195674418605" magical="653.307558139535" />
+			<attribute>
+				<attack type="DARK" value="200" />
+				<defence fire="170" water="170" wind="170" earth="170" holy="120" dark="200" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="160" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="10" /> <!--NPC Strike -->
+			<skill id="4034" level="10" /> <!--Decrease Speed -->
+			<skill id="4408" level="11" /> <!--HP Increase (3x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="18" /> <!--Extremely Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="3" /> <!--Light Armor Type -->
+			<skill id="4415" level="11" /> <!--Spears -->
+			<skill id="4416" level="9" /> <!--Demons -->
+			<skill id="5083" level="4" /> <!--Stun -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5597" level="1" /> <!--Invalid Skill cancel -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>3</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1500" isAggressive="false">
+			<clanList>
+				<clan>CASTLE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="12.5" />
+			<height normal="33.5" />
+		</collision>
+	</npc>
+	<npc id="38116" displayId="27278" level="85" name="Durang" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">	
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="114" />
+			<param name="MoveAroundSocial1" value="114" />
+			<param name="MoveAroundSocial2" value="114" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<equipment rhand="205" /> <!-- rhand: Ghoul's Staff -->
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2975.2369188" hpRegen="8.721" mp="1742.976" mpRegen="3.0804" />
+			<attack physical="938.20801458" magical="656.66638089" random="50" critical="1" accuracy="12" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="354.8183475" magical="259.6406685" evasion="3" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="-5" dark="53" />
+			</attribute>
+			<speed>
+				<walk ground="70" />
+				<run ground="180" />
+			</speed>
+			<hitTime>740</hitTime>
+		</stats>
+		<status />
+		<skillList>
+			<skill id="4408" level="17" /> <!--HP Increase (9x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="1" /> <!--Heavy Armor Type -->
+			<skill id="4415" level="5" /> <!--Blunt Weapons -->
+			<skill id="4416" level="9" /> <!--Demons -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>9</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" />
+		<collision>
+			<radius normal="12" />
+			<height normal="40" />
+		</collision>
+	</npc>	
+	<npc id="38117" displayId="18490" level="85" name="Siran" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="1" />
+			<param name="AttackRange" value="2" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Min" value="200" />
+			<param name="Skill01_HPTarget" value="0" />
+			<param name="Skill01_LowHP" value="70" />
+			<param name="Skill01_MainAttack" value="1" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill02_Check_Dist" value="1" />
+			<param name="Skill02_Dist_Max" value="200" />
+			<skill name="Skill01_ID" id="5328" level="5" /> <!-- NPC(party) -Magic Single Long Range DD - Dark -->
+			<skill name="Skill02_ID" id="5372" level="4" /> <!-- NPC(party) - Magic Close Range DD - less powerful -->
+			<skill name="SelfExplosion" id="5528" level="1" /> <!-- Self-Destruct -->
+			<skill name="SD_skill" id="4032" level="11" /> <!-- NPC Strike -->
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>FEMALE</sex>
+		<acquire expRate="8.92032426837329" sp="6876" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="18540.1170337556" hpRegen="185.679969089944" mp="1881.8" mpRegen="3" />
+			<attack physical="10366.899777119" magical="7079.24864306088" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="584.99232" magical="642.108" />
+			<attribute>
+				<attack type="DARK" value="200" />
+				<defence fire="170" water="170" wind="170" earth="170" holy="120" dark="200" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+			<hitTime>460</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4032" level="11" /> <!--NPC Strike -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="3" /> <!--Extremely Weak P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="3" /> <!--Light Armor Type -->
+			<skill id="4415" level="1" /> <!--Bare Hands -->
+			<skill id="4416" level="9" /> <!--Demons -->
+			<skill id="5328" level="5" /> <!--NPC(party) -Magic Single Long Range DD - Dark -->
+			<skill id="5372" level="4" /> <!--NPC(party) - Magic Close Range DD - less powerful -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5528" level="1" /> <!--Self-Destruct -->
+			<skill id="5597" level="1" /> <!--Invalid Skill cancel -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1500" isAggressive="false">
+			<clanList>
+				<clan>CASTLE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="8" />
+			<height normal="17.5" />
+		</collision>
+	</npc>	
+	<npc id="38118" displayId="18482" level="85" name="Swimmer" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<race>DRAGON</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2951.85588" hpRegen="8.5" mp="1743.0" mpRegen="3" />
+			<attack physical="931.81944" magical="636.31188" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="349.77477" magical="255.95" />
+			<attribute>
+				<defence fire="60" water="100" wind="60" earth="60" holy="80" dark="80" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="13" /> <!--Slightly Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!--Slightly Strong M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="1" /> <!--Bare Hands -->
+			<skill id="4416" level="10" /> <!--Dragons -->
+			<skill id="4441" level="5" /> <!--Greater Resist Mental Derangement -->
+			<skill id="5463" level="1" /> <!--Water Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="500" isAggressive="false">
+			<clanList>
+				<clan>DARK</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="55" />
+			<height normal="80.5" />
+		</collision>
+	</npc>	
+	<npc id="38119" displayId="25640" level="85" name="Freedkyilla" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="raise" value="5" />
+			<skill name="Skill01_ID" id="5880" level="2" /> <!-- Vicious Mutilation -->
+			<skill name="Skill02_ID" id="5894" level="1" /> <!-- Mark of Despair -->
+			<skill name="Skill03_ID" id="5899" level="2" /> <!-- Burst of Pain -->
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<equipment rhand="13984" /> <!-- rhand: Exclusive to Monsters (Death Slayer_1hs) -->
+		<acquire expRate="472.557809630057" sp="410691.765514266" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
+			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
+			<attribute>
+				<attack type="EARTH" value="130" />
+				<defence fire="150" water="150" wind="120" earth="180" holy="150" dark="150" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="200" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="1" /> <!--Undead -->
+			<skill id="5465" level="1" /> <!--Earth Attacks -->
+			<skill id="5880" level="2" /> <!--Vicious Mutilation -->
+			<skill id="5894" level="1" /> <!--Mark of Despair -->
+			<skill id="5899" level="2" /> <!--Burst of Pain -->
+			<skill id="5913" level="1" /> <!--Putrefaction Cleanse -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="false">
+			<clanList>
+				<clan>ACEED</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="24" />
+			<height normal="40.8" />
+		</collision>
+	</npc>	
+	<npc id="38120" displayId="25637" level="85" name="Demoniac" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="raise" value="5" />
+			<skill name="Skill01_ID" id="5898" level="2" /> <!-- Blast of Anchor -->
+			<skill name="Skill02_ID" id="5904" level="2" /> <!-- Mist of Souleater -->
+			<skill name="Skill03_ID" id="5907" level="2" /> <!-- Ritual of Entombment -->
+			<skill name="Skill_HPBuff" id="5916" level="1" /> <!-- Cruising Aura -->
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<acquire expRate="472.557809630057" sp="410691.765514266" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
+			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
+			<attribute>
+				<attack type="DARK" value="130" />
+				<defence fire="150" water="150" wind="150" earth="150" holy="120" dark="180" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="46" />
+				<run ground="200" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="1" /> <!--Undead -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5898" level="2" /> <!--Blast of Anchor -->
+			<skill id="5904" level="2" /> <!--Mist of Souleater -->
+			<skill id="5907" level="2" /> <!--Ritual of Entombment -->
+			<skill id="5916" level="1" /> <!--Cruising Aura -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="false">
+			<clanList>
+				<clan>ACEED</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="31.68" />
+			<height normal="60.72" />
+		</collision>
+	</npc>	
+	<npc id="38121" displayId="29001" level="85" name="Bitter" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<race>BUG</race>
+		<sex>FEMALE</sex>
+		<acquire expRate="1362.20985" sp="140740" raidPoints="1680" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="96596" hpRegen="208" mp="300.8" mpRegen="2.1" />
+			<attack physical="105" magical="8" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1252" magical="229" evasion="-18" />
+			<attribute>
+				<defence fire="-83" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="230" />
+			</speed>
+			<hitTime>370</hitTime>
+		</stats>
+		<status undying="false" noSleepMode="true" />
+		<skillList>
+			<skill id="4019" level="1" /> <!--Decrease Speed -->
+			<skill id="4021" level="1" /> <!--Queen Ant -->
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="12" /> <!--Bugs -->
+		</skillList>
+		<corpseTime>300</corpseTime>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="2000" clanHelpRange="2000" isAggressive="false">
+			<clanList>
+				<clan>QUEEN_ANT</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="45" />
+			<height normal="53" />
+		</collision>
+	</npc>	
+	<npc id="38122" displayId="22553" level="85" name="Crystal" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>FEMALE</sex>
+		<acquire expRate="1.4376" sp="852" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<attack physical="794.70901" magical="542.68324" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="319.24623" magical="233.61053" />
+			<attribute>
+				<defence fire="20" water="20" wind="20" earth="20" holy="20" dark="20" />
+			</attribute>
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+		</stats>
+		<status undying="false" flying="true" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="2" /> <!--Magic Creatures -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="62" />
+			<height normal="140" />
+		</collision>
+	</npc>	
+	<npc id="38123" displayId="18856" level="85" name="Winter" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="6290" level="1" /> <!-- Power Strike -->
+			<skill name="SelfRangeDD" id="6291" level="1" /> <!-- Power Strike -->
+			<skill name="Dash" id="6292" level="1" /> <!-- Rush -->
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="800666.35202088" hpRegen="109.442978618283" mp="18468.0" mpRegen="300" />
+			<attack physical="16109.8134919157" magical="4000.33245360119" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="578.861024" magical="635.378064" />
+			<attribute>
+				<attack type="WATER" value="250" />
+				<defence fire="150" water="250" wind="200" earth="200" holy="200" dark="200" default="200" />
+			</attribute>
+			<speed>
+				<walk ground="20" />
+				<run ground="150" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4071" level="2" /> <!--Resist Bow/Crossbow Weapons -->
+			<skill id="4116" level="2" /> <!--Resist M. Atk. -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="17" /> <!--Very Strong P. Atk. -->
+			<skill id="4411" level="16" /> <!--Very Strong M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="6" /> <!--Humanoids -->
+			<skill id="4435" level="1" /> <!--Greater Resist Stun -->
+			<skill id="4438" level="1" /> <!--Greater Resist Sleep -->
+			<skill id="4439" level="1" /> <!--Greater Resist Hold -->
+			<skill id="4440" level="1" /> <!--Greater Resist Paralysis -->
+			<skill id="4441" level="1" /> <!--Greater Resist Mental Derangement -->
+			<skill id="5463" level="1" /> <!--Water Attacks -->
+			<skill id="5601" level="1" /> <!--Short-Range Physical Attack Resistance -->
+			<skill id="6290" level="1" /> <!--Power Strike -->
+			<skill id="6291" level="1" /> <!--Power Strike -->
+			<skill id="6292" level="1" /> <!--Rush -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>FREYA</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="15" />
+			<height normal="31" />
+		</collision>
+	</npc>	
+	<npc id="38124" displayId="22832" level="85" name="Scout of the Tower" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6876" level="1" /> <!-- Power Strike -->
+			<skill name="Skill02_ID" id="6877" level="1" /> <!-- Power Strike -->
+			<skill name="Skill03_ID" id="6878" level="1" /> <!-- Paralysis -->
+		</parameters>
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<acquire expRate="84.4996428751149" sp="62866" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="56202.8420013809" hpRegen="190.897045965523" mp="1777.4" mpRegen="3" />
+			<attack physical="10639.9858836169" magical="7860.81599124714" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="566.178304" magical="621.45708" />
+			<attribute>
+				<attack type="WATER" value="200" />
+				<defence fire="140" water="200" wind="170" earth="170" holy="170" dark="170" default="180" />
+			</attribute>
+			<speed>
+				<walk ground="200" />
+				<run ground="160" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4285" level="4" /> <!--Resist Sleep Attacks -->
+			<skill id="4287" level="4" /> <!--Resist Hold Attacks -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="15" /> <!--Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="15" /> <!--Strong P. Def. -->
+			<skill id="4413" level="7" /> <!--Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="10" /> <!--Dragons -->
+			<skill id="4441" level="5" /> <!--Greater Resist Mental Derangement -->
+			<skill id="5463" level="1" /> <!--Water Attacks -->
+			<skill id="6876" level="1" /> <!--Power Strike -->
+			<skill id="6877" level="1" /> <!--Power Strike -->
+			<skill id="6878" level="1" /> <!--Paralysis -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" />		
+		<collision>
+			<radius normal="37" />
+			<height normal="28" />
+		</collision>
+	</npc>	
+	<npc id="38125" displayId="22763" level="85" name="Hanibi" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="6393" level="1" /> <!-- Cokrakon Sonic Beam -->
+			<skill name="Skill02_ID" id="6394" level="1" /> <!-- Cokrakon Sonic Bomb -->
+			<skill name="Skill03_ID" id="6395" level="1" /> <!-- Cokrakon Dreadful Clow -->
+			<skill name="SpecialSkill01_ID" id="6392" level="1" /> <!-- Cokrakon Sonic Shot -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire expRate="167.397017910035" sp="121549" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="111546.700057767" hpRegen="187.260794107867" mp="1846.8" mpRegen="3" />
+			<attack physical="11740.1011965289" magical="8513.53762826717" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="578.861024" magical="635.378064" />
+			<attribute>
+				<attack type="EARTH" value="300" />
+				<defence fire="220" water="220" wind="170" earth="300" holy="220" dark="220" default="220" />
+			</attribute>
+			<speed>
+				<walk ground="75" />
+				<run ground="270" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4388" level="4" /> <!--Resist Paralysis Attacks -->
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="16" /> <!--Very Strong P. Atk. -->
+			<skill id="4411" level="17" /> <!--Very Strong M. Atk. -->
+			<skill id="4412" level="15" /> <!--Strong P. Def. -->
+			<skill id="4413" level="5" /> <!--Very Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="3" /> <!--Beasts -->
+			<skill id="4438" level="4" /> <!--Greater Resist Sleep -->
+			<skill id="4439" level="4" /> <!--Greater Resist Hold -->
+			<skill id="4441" level="5" /> <!--Greater Resist Mental Derangement -->
+			<skill id="5465" level="1" /> <!--Earth Attacks -->
+			<skill id="5598" level="9" /> <!--Flash Resistance -->
+			<skill id="5599" level="9" /> <!--Stun Resistance -->
+			<skill id="5622" level="1" /> <!--Double Skill Attack -->
+			<skill id="6392" level="1" /> <!--Cokrakon Sonic Shot -->
+			<skill id="6393" level="1" /> <!--Cokrakon Sonic Beam -->
+			<skill id="6394" level="1" /> <!--Cokrakon Sonic Bomb -->
+			<skill id="6395" level="1" /> <!--Cokrakon Dreadful Clow -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>COCRACON_ELITE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="32" />
+			<height normal="69.5" />
+		</collision>
+	</npc>	
+	<npc id="38126" displayId="22764" level="85" name="Liviona" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="6396" level="1" /> <!-- Cokrakon Panic -->
+			<skill name="Skill02_ID" id="6397" level="1" /> <!-- Cokrakon Staggering Blow -->
+			<skill name="Skill03_ID" id="6398" level="1" /> <!-- Cokrakon Sonic Shout -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire expRate="167.017595349481" sp="121260" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="111546.700057767" hpRegen="187.260794107867" mp="1846.8" mpRegen="3" />
+			<attack physical="11740.1011965289" magical="8513.53762826717" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="578.861024" magical="635.378064" />
+			<attribute>
+				<attack type="EARTH" value="300" />
+				<defence fire="220" water="220" wind="170" earth="300" holy="220" dark="220" default="220" />
+			</attribute>
+			<speed>
+				<walk ground="24" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4388" level="4" /> <!--Resist Paralysis Attacks -->
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="17" /> <!--Very Strong P. Atk. -->
+			<skill id="4411" level="16" /> <!--Very Strong M. Atk. -->
+			<skill id="4412" level="14" /> <!--Strong P. Def. -->
+			<skill id="4413" level="5" /> <!--Very Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="3" /> <!--Beasts -->
+			<skill id="4438" level="4" /> <!--Greater Resist Sleep -->
+			<skill id="4439" level="4" /> <!--Greater Resist Hold -->
+			<skill id="4441" level="5" /> <!--Greater Resist Mental Derangement -->
+			<skill id="5465" level="1" /> <!--Earth Attacks -->
+			<skill id="5598" level="9" /> <!--Flash Resistance -->
+			<skill id="5599" level="9" /> <!--Stun Resistance -->
+			<skill id="5622" level="1" /> <!--Double Skill Attack -->
+			<skill id="6396" level="1" /> <!--Cokrakon Panic -->
+			<skill id="6397" level="1" /> <!--Cokrakon Staggering Blow -->
+			<skill id="6398" level="1" /> <!--Cokrakon Sonic Shout -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>COCRACON_ELITE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="48" />
+			<height normal="46" />
+		</collision>
+	</npc>	
+	<npc id="38127" displayId="22765" level="85" name="Zaiona" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="6399" level="1" /> <!-- Cokrakon Dreadful Piercing -->
+			<skill name="Skill02_ID" id="6400" level="1" /> <!-- Cokrakon Dwindling Velocity -->
+			<skill name="Skill03_ID" id="6401" level="1" /> <!-- Cokrakon Wheeling Clow -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire expRate="167.397017910035" sp="121549" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="111546.700057767" hpRegen="187.260794107867" mp="1846.8" mpRegen="3" />
+			<attack physical="11740.1011965289" magical="8513.53762826717" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="578.861024" magical="635.378064" />
+			<attribute>
+				<attack type="EARTH" value="300" />
+				<defence fire="220" water="220" wind="170" earth="300" holy="220" dark="220" default="220" />
+			</attribute>
+			<speed>
+				<walk ground="94" />
+				<run ground="204" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4388" level="4" /> <!--Resist Paralysis Attacks -->
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="16" /> <!--Very Strong P. Atk. -->
+			<skill id="4411" level="17" /> <!--Very Strong M. Atk. -->
+			<skill id="4412" level="15" /> <!--Strong P. Def. -->
+			<skill id="4413" level="5" /> <!--Very Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="3" /> <!--Beasts -->
+			<skill id="4438" level="4" /> <!--Greater Resist Sleep -->
+			<skill id="4439" level="4" /> <!--Greater Resist Hold -->
+			<skill id="4441" level="5" /> <!--Greater Resist Mental Derangement -->
+			<skill id="5465" level="1" /> <!--Earth Attacks -->
+			<skill id="5598" level="9" /> <!--Flash Resistance -->
+			<skill id="5599" level="9" /> <!--Stun Resistance -->
+			<skill id="5622" level="1" /> <!--Double Skill Attack -->
+			<skill id="6399" level="1" /> <!--Cokrakon Dreadful Piercing -->
+			<skill id="6400" level="1" /> <!--Cokrakon Dwindling Velocity -->
+			<skill id="6401" level="1" /> <!--Cokrakon Wheeling Clow -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>COCRACON_ELITE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="35" />
+			<height normal="49.5" />
+		</collision>
+	</npc>	
+	<npc id="38128" displayId="22758" level="85" name="Pagian" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2Monster">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="6413" level="1" /> <!-- Reptilikon Missile -->
+			<skill name="Skill02_ID" id="6414" level="1" /> <!-- Reptilikon Charge -->
+			<skill name="SpecialSkill01_ID" id="6415" level="1" /> <!-- Reptilikon Scratch -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire expRate="167.017595349481" sp="121260" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="111546.700057767" hpRegen="187.260794107867" mp="1846.8" mpRegen="3" />
+			<attack physical="11740.1011965289" magical="8513.53762826717" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="578.861024" magical="635.378064" />
+			<attribute>
+				<attack type="EARTH" value="300" />
+				<defence fire="220" water="220" wind="170" earth="300" holy="220" dark="220" default="220" />
+			</attribute>
+			<speed>
+				<walk ground="42" />
+				<run ground="180" />
+			</speed>
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4388" level="4" /> <!--Resist Paralysis Attacks -->
+			<skill id="4408" level="10" /> <!--HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="17" /> <!--Very Strong P. Atk. -->
+			<skill id="4411" level="16" /> <!--Very Strong M. Atk. -->
+			<skill id="4412" level="14" /> <!--Strong P. Def. -->
+			<skill id="4413" level="5" /> <!--Very Weak M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="3" /> <!--Beasts -->
+			<skill id="4438" level="4" /> <!--Greater Resist Sleep -->
+			<skill id="4439" level="4" /> <!--Greater Resist Hold -->
+			<skill id="4441" level="5" /> <!--Greater Resist Mental Derangement -->
+			<skill id="5465" level="1" /> <!--Earth Attacks -->
+			<skill id="5598" level="9" /> <!--Flash Resistance -->
+			<skill id="5599" level="9" /> <!--Stun Resistance -->
+			<skill id="5622" level="1" /> <!--Double Skill Attack -->
+			<skill id="6413" level="1" /> <!--Reptilikon Missile -->
+			<skill id="6414" level="1" /> <!--Reptilikon Charge -->
+			<skill id="6415" level="1" /> <!--Reptilikon Scratch -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300">
+			<clanList>
+				<clan>RAPTILICON_ELITE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="26" />
+			<height normal="48" />
+		</collision>
+	</npc>	
+	<npc id="38129" displayId="29047" level="85" name="Halisha" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- Confirmed CT2.5 -->
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<equipment rhand="8222" /> <!-- rhand: Monster Only (Follower of Frintezza Tran Calibur) -->
+		<acquire expRate="18110.588716926" sp="10028450" raidPoints="14727" />
+		<stats str="60" int="76" dex="73" wit="43" con="57" men="80">
+			<vitals hp="3842432.67633202" hpRegen="248.43" mp="23156.6754239312" mpRegen="109" />
+			<attack physical="8890.29152833288" magical="8989.0725799934" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="1566.80362116734" magical="2193.5250699484" />
+			<attribute>
+				<attack type="DARK" value="370" />
+				<defence fire="300" water="300" wind="300" earth="300" holy="250" dark="270" default="300" />
+			</attribute>
+			<speed>
+				<walk ground="250" />
+				<run ground="155" />
+			</speed>
+			<hitTime>430</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4071" level="4" /> <!--Resist Bow/Crossbow Weapons -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="1" /> <!--Bare Hands -->
+			<skill id="4416" level="9" /> <!--Demons -->
+			<skill id="5078" level="1" /> <!--Frintezza Critical Power -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="3000" clanHelpRange="2000" isAggressive="false">
+			<skill primaryId="5014" shortRangeId="5019" shortRangeChance="10" />
+			<clanList>
+				<clan>FRINTESSA</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="92" />
+			<height normal="112.8" />
+		</collision>
+	</npc>	
+	<npc id="38130" displayId="25050" level="85" name="Avenger of the Tower" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="RaidSpawnMusic" value="Rm01_A" />
+			<skill name="SelfRangeCancel_a" id="4177" level="5" /> <!-- BOSS Cancel Magic -->
+			<skill name="SelfBuff_a" id="4176" level="5" /> <!-- BOSS Reflect Damage -->
+			<skill name="PhysicalSpecial_a" id="4728" level="5" /> <!-- Stun -->
+			<skill name="SelfRangePhysicalSpecial_a" id="4172" level="5" /> <!-- Stun -->
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<equipment rhand="1472" /> <!-- rhand: Dreadbane -->
+		<acquire expRate="8670.633250673215" sp="2855037" raidPoints="9400" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="3240920.589187485" hpRegen="139.95474844594" mp="775.8" mpRegen="2.4" />
+			<attack physical="9730.55312336269" magical="2710.8169963621" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="6140.55582" magical="2990.8" evasion="-18" />
+			<attribute>
+				<attack type="DARK" value="350" />
+				<defence fire="350" water="350" wind="350" earth="350" holy="350" dark="350" />
+			</attribute>
+			<speed>
+				<walk ground="100" />
+				<run ground="170" />
+			</speed>
+			<hitTime>450</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4172" level="5" /> <!--Stun -->
+			<skill id="4176" level="5" /> <!--BOSS Reflect Damage -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="1" /> <!--Undead -->
+			<skill id="4494" level="1" /> <!--Raid Boss -->
+			<skill id="4728" level="5" /> <!--Stun -->
+			<skill id="4807" level="1" /> <!--Raid Boss - Level 51 -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" clanHelpRange="300" isAggressive="false" />		
+		<collision>
+			<radius normal="45" />
+			<height normal="141" />
+		</collision>
+	</npc>	
+	<npc id="38131" displayId="25610" level="85" name="Nuker of the Tower" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<param name="AttackRange" value="2" />
+			<param name="IsHealer" value="2" />
+			<param name="Skill01_AttackSplash" value="1" />
+			<param name="Skill01_MainAttack" value="1" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill02_Check_Dist" value="1" />
+			<param name="Skill02_Dist_Max" value="800" />
+			<param name="Skill03_Target" value="3" />
+			<param name="Skill03_AttackSplash" value="1" />
+			<param name="Skill03_Check_Dist" value="1" />
+			<param name="Skill03_Dist_Max" value="250" />
+			<param name="Skill04_Target" value="3" />
+			<param name="aspect_myself" value="1" />
+			<skill name="Skill01_ID" id="5506" level="1" /> <!-- Water Blossom -->
+			<skill name="Skill02_ID" id="5510" level="1" /> <!-- Water Power -->
+			<skill name="Skill03_ID" id="5514" level="1" /> <!-- Water Taint -->
+			<skill name="Skill04_ID" id="5517" level="1" /> <!-- Nurture -->
+		</parameters>
+		<race>ELEMENTAL</race>
+		<sex>MALE</sex>
+		<acquire expRate="2001.13560941961" sp="2851570" raidPoints="1368" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="986096.671976069" hpRegen="287.940361385434" mp="1917.0" mpRegen="3" />
+			<attack physical="5799.79740479873" magical="4805.40042572106" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1140.47845614035" magical="834.548771929825" />
+			<attribute>
+				<attack type="WATER" value="200" />
+				<defence fire="130" water="200" wind="170" earth="170" holy="170" dark="170" default="170" />
+			</attribute>
+			<speed>
+				<walk ground="100" />
+				<run ground="100" />
+			</speed>
+			<hitTime>530</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4071" level="5" /> <!--Resist Bow/Crossbow Weapons -->
+			<skill id="4116" level="10" /> <!--Resist M. Atk. -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="7" /> <!--Spirits -->
+			<skill id="4494" level="1" /> <!--Raid Boss -->
+			<skill id="5463" level="1" /> <!--Water Attacks -->
+			<skill id="5506" level="1" /> <!--Water Blossom -->
+			<skill id="5510" level="1" /> <!--Water Power -->
+			<skill id="5514" level="1" /> <!--Water Taint -->
+			<skill id="5517" level="1" /> <!--Nurture -->
+			<skill id="5616" level="1" /> <!--Raid Boss - Level 87 -->
+			<skill id="5620" level="9" /> <!--Short-Range Physical Attack Weakness -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="false">
+			<clanList>
+				<clan>CASTLE</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="60" />
+			<height normal="99.5" />
+		</collision>
+	</npc>	
+	<npc id="38132" displayId="29150" level="85" name="Ekimus" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill_HPBuff" id="5916" level="1" /> <!-- Cruising Aura -->
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<acquire raidPoints="3975" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="1178416.99142083" hpRegen="1754.50097962536" mp="184680.0" mpRegen="1000" />
+			<attack physical="2054.09667" magical="1506.055474" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="12734.94253" magical="8471.70752" />
+			<attribute>
+				<attack type="DARK" value="250" />
+				<defence fire="200" water="200" wind="200" earth="200" holy="150" dark="250" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="200" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="13" /> <!--MP Increase (5x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="4" /> <!--One-handed Sword -->
+			<skill id="4416" level="1" /> <!--Undead -->
+			<skill id="4438" level="5" /> <!--Greater Resist Sleep -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5916" level="1" /> <!--Cruising Aura -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="false">
+			<clanList>
+				<clan>ACEED</clan>
+			</clanList>
+		</ai>		
+		<collision>
+			<radius normal="25" />
+			<height normal="70" />
+		</collision>
+	</npc>	
+	<npc id="38133" displayId="25698" level="85" name="Furious" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="Skill01_ID" id="6390" level="1" /> <!-- Cokrakon Sonic Explosion -->
+			<skill name="Skill02_ID" id="6391" level="1" /> <!-- Cokrakon Sonic Slash -->
+			<skill name="SpecialSkill01_ID" id="6392" level="1" /> <!-- Cokrakon Sonic Shot -->
+			<skill name="SpecialSkill02_ID" id="6376" level="1" /> <!-- Sonic Strike -->
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<acquire expRate="447.580791129282" sp="403114.502440528" raidPoints="361" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="631293.503534084" hpRegen="242.622420161294" mp="18468.0" mpRegen="300" />
+			<attack physical="11355.958626" magical="1212.53790962933" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="17479.902520542" magical="8527.328348" evasion="-18" />
+			<attribute>
+				<attack type="EARTH" value="350" />
+				<defence fire="250" water="250" wind="200" earth="350" holy="250" dark="250" default="250" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="13" /> <!--Two-handed Sword -->
+			<skill id="4416" level="3" /> <!--Beasts -->
+			<skill id="4494" level="1" /> <!--Raid Boss -->
+			<skill id="5465" level="1" /> <!--Earth Attacks -->
+			<skill id="5622" level="2" /> <!--Triple Skill Attack -->
+			<skill id="6376" level="1" /> <!--Sonic Strike -->
+			<skill id="6390" level="1" /> <!--Cokrakon Sonic Explosion -->
+			<skill id="6391" level="1" /> <!--Cokrakon Sonic Slash -->
+			<skill id="6392" level="1" /> <!--Cokrakon Sonic Shot -->
+			<skill id="6654" level="1" /> <!--Level 85 Raid Boss -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="false" />		
+		<collision>
+			<radius normal="45" />
+			<height normal="75" />
+		</collision>
+	</npc>	
+	<npc id="38134" displayId="29099" level="85" name="Balrog" usingServerSideName="true" title="Tower Of Fate" usingServerSideTitle="true" type="L2RaidBoss">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="selfbuff1" id="5221" level="1" /> <!-- Balor - Physical Close Range Weak Point -->
+			<skill name="selfbuff2" id="5222" level="1" /> <!-- Balor - Physical Long Range Weak Point -->
+			<skill name="selfbuff3" id="5223" level="1" /> <!-- Balor - Magic Weak Point -->
+			<skill name="selfbuff4" id="5224" level="1" /> <!-- Berserk -->
+			<skill name="selfbuff5" id="5225" level="1" /> <!-- Invincible -->
+			<skill name="PhysicalSpecial1" id="5227" level="1" /> <!-- Ground Strike -->
+			<skill name="PhysicalSpecial2" id="5228" level="1" /> <!-- Jump Attack -->
+			<skill name="PhysicalSpecial3" id="5229" level="1" /> <!-- Strong Punch -->
+			<skill name="PhysicalSpecial4" id="5226" level="1" /> <!-- Imprison -->
+			<skill name="d_skill1" id="5402" level="1" /> <!-- Presentation - Balor 2 -->
+			<skill name="d_skill2" id="5403" level="1" /> <!-- Presentation - Balor 3 -->
+			<skill name="d_skill3" id="5404" level="1" /> <!-- Presentation - Balor 4 -->
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire expRate="463.086762109777" sp="2191683" raidPoints="399" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="1078413.49462422" hpRegen="100.862738374864" mp="100000.0" mpRegen="1000" />
+			<attack physical="2098.5269559057" magical="1433.02186584885" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="1415.44576" magical="1035.7618" evasion="-18" />
+			<attribute>
+				<attack type="DARK" value="80" />
+				<defence fire="70" water="70" wind="70" earth="70" holy="50" dark="95" default="60" />
+			</attribute>
+			<speed>
+				<walk ground="34" />
+				<run ground="180" />
+			</speed>
+			<hitTime>470</hitTime>
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="1" /> <!--Bare Hands -->
+			<skill id="4416" level="9" /> <!--Demons -->
+			<skill id="5221" level="1" /> <!--Balor - Physical Close Range Weak Point -->
+			<skill id="5222" level="1" /> <!--Balor - Physical Long Range Weak Point -->
+			<skill id="5223" level="1" /> <!--Balor - Magic Weak Point -->
+			<skill id="5224" level="1" /> <!--Berserk -->
+			<skill id="5227" level="1" /> <!--Ground Strike -->
+			<skill id="5228" level="1" /> <!--Jump Attack -->
+			<skill id="5229" level="1" /> <!--Strong Punch -->
+			<skill id="5467" level="1" /> <!--Dark Attacks -->
+			<skill id="5479" level="1" /> <!--Boss Petrification Resistance -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="450" clanHelpRange="300" />
+		<collision>
+			<radius normal="54" />
+			<height normal="77.5" />
+		</collision>
+	</npc>	
+	<npc id="38135" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Daily Missions*" usingServerSideTitle="true" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="123" />
+		</parameters>
+		<race>HUMAN</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="688.86373" magical="470.40463" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="295.91597" magical="216.53847" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status attackable="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="14" /> <!--Humans -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="1000" clanHelpRange="300" />
+		<collision>
+			<radius normal="13.5" />
+			<height normal="20.5" />
+		</collision>
+	</npc>
+	<npc id="38136" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="123" />
+		</parameters>
+		<race>HUMAN</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="688.86373" magical="470.40463" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="295.91597" magical="216.53847" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status attackable="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="14" /> <!--Humans -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="1000" clanHelpRange="300" />
+		<collision>
+			<radius normal="13.5" />
+			<height normal="20.5" />
+		</collision>
+	</npc>
+	<npc id="38137" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="123" />
+		</parameters>
+		<race>HUMAN</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="688.86373" magical="470.40463" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="295.91597" magical="216.53847" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status attackable="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="14" /> <!--Humans -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="1000" clanHelpRange="300" />
+		<collision>
+			<radius normal="13.5" />
+			<height normal="20.5" />
+		</collision>
+	</npc>
+	<npc id="38138" displayId="30358" level="85" name="Durander" usingServerSideName="true" title="*Epic Missions*" usingServerSideTitle="true" type="L2Npc">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="180" />
+		</parameters>
+		<race>DARK_ELF</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="688.86373" magical="470.40463" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="295.91597" magical="216.53847" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="120" />
+			</speed>
+		</stats>
+		<status attackable="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!--Average P. Atk. -->
+			<skill id="4411" level="11" /> <!--Average M. Atk. -->
+			<skill id="4412" level="11" /> <!--Average P. Def. -->
+			<skill id="4413" level="11" /> <!--Average M. Def. -->
+			<skill id="4414" level="2" /> <!--Standard Type -->
+			<skill id="4415" level="3" /> <!--One-handed Sword -->
+			<skill id="4416" level="16" /> <!--Dark Elves -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai aggroRange="1000" clanHelpRange="300" isAggressive="false" />
+		<collision>
+			<radius normal="6" />
+			<height normal="23.8" />
+		</collision>
+	</npc>
+	</list>

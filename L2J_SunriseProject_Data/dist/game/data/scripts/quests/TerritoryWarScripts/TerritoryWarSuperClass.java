@@ -362,13 +362,13 @@ public class TerritoryWarSuperClass extends Quest
 		if (npc.getId() == CATAPULT_ID)
 		{
 			manager.territoryCatapultDestroyed(TERRITORY_ID - 80);
-			manager.giveTWPoint(killer, TERRITORY_ID, 4);
+			manager.giveTWPoint(killer, TERRITORY_ID, 40);
 			manager.announceToParticipants(new ExShowScreenMessage(npcString[0], 2, 10000), 135000, 13500);
 			handleBecomeMercenaryQuest(killer, true);
 		}
 		else if (Util.contains(LEADER_IDS, npc.getId()))
 		{
-			manager.giveTWPoint(killer, TERRITORY_ID, 3);
+			manager.giveTWPoint(killer, TERRITORY_ID, 30);
 		}
 		
 		if ((killer.getSiegeSide() != TERRITORY_ID) && (TerritoryWarManager.getInstance().getTerritory(killer.getSiegeSide() - 80) != null))

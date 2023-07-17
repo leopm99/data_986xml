@@ -87,7 +87,7 @@ public class Q00251_NoSecrets extends Quest
 		{
 			final int npcId = npc.getId();
 			
-			if (Util.contains(MOBS, npcId) && (getRandom(100) < (10 * Config.RATE_QUEST_DROP)) && (st.getQuestItemsCount(DIARY) < 10))
+			if (Util.contains(MOBS, npcId) && (getRandom(100) < (20 * Config.RATE_QUEST_DROP)) && (st.getQuestItemsCount(DIARY) < 10))
 			{
 				st.giveItems(DIARY, 1);
 				if ((st.getQuestItemsCount(DIARY) >= 10) && (st.getQuestItemsCount(TABLE) >= 5))
@@ -99,7 +99,7 @@ public class Q00251_NoSecrets extends Quest
 					st.playSound(QuestSound.ITEMSOUND_QUEST_ITEMGET);
 				}
 			}
-			else if (Util.contains(MOBS2, npcId) && (getRandom(100) < (5 * Config.RATE_QUEST_DROP)) && (st.getQuestItemsCount(TABLE) < 5))
+			else if (Util.contains(MOBS2, npcId) && (getRandom(100) < (20 * Config.RATE_QUEST_DROP)) && (st.getQuestItemsCount(TABLE) < 5))
 			{
 				st.giveItems(TABLE, 1);
 				if ((st.getQuestItemsCount(DIARY) >= 10) && (st.getQuestItemsCount(TABLE) >= 5))
