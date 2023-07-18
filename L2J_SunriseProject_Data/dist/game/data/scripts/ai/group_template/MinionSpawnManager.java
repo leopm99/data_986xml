@@ -399,6 +399,9 @@ public final class MinionSpawnManager extends AbstractNpcAI
 		NPC.add(25542); // Ranku
 		NPC.add(27346); // Shilen's Evil Thoughts
 		NPC.add(29002); // Queen Ant Larva
+		NPC.add(38003); // Ashakiel
+		NPC.add(38006); // Soul Fire
+		NPC.add(38010); // White Eyed
 	}
 	
 	private static final NpcStringId[] ON_ATTACK_MSG =

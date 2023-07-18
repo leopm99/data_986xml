@@ -59,6 +59,7 @@ import l2r.gameserver.taskmanager.DecayTaskManager;
 import l2r.gameserver.util.Util;
 import l2r.util.Rnd;
 
+import ai.npc.Jinia.Jinia;
 import instances.AbstractInstance;
 import quests.Q10286_ReunionWithSirra.Q10286_ReunionWithSirra;
 
@@ -134,7 +135,7 @@ public final class IceQueensCastleUltimateBattle extends AbstractInstance
 		new Location(114024, -112278, -11210),
 		new Location(113865, -112435, -11210),
 		new Location(113865, -112276, -11210),
-		
+	
 	};
 	private static final Location[] STATUES_LOC =
 	{
@@ -1258,13 +1259,17 @@ public final class IceQueensCastleUltimateBattle extends AbstractInstance
 		}
 		for (L2PcInstance channelMember : channel.getMembers())
 		{
-			QuestState st = channelMember.getQuestState(Q10286_ReunionWithSirra.class.getSimpleName());
-			if ((st == null) || !st.isCompleted())
+			
+			if (!Jinia.FREYA_NO_QUEST)
 			{
-				SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.C1_S_QUEST_REQUIREMENT_IS_NOT_SUFFICIENT_AND_CANNOT_BE_ENTERED);
-				sm.addPcName(channelMember);
-				player.getParty().getCommandChannel().broadcastPacket(sm);
-				return false;
+				QuestState st = channelMember.getQuestState(Q10286_ReunionWithSirra.class.getSimpleName());
+				if ((st == null) || !st.isCompleted())
+				{
+					SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.C1_S_QUEST_REQUIREMENT_IS_NOT_SUFFICIENT_AND_CANNOT_BE_ENTERED);
+					sm.addPcName(channelMember);
+					player.getParty().getCommandChannel().broadcastPacket(sm);
+					return false;
+				}
 			}
 			
 			if (channelMember.getLevel() < MIN_LEVEL)

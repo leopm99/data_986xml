@@ -497,6 +497,7 @@
 				<run ground="1" />
 			</speed>
 		</stats>
+		<status undying="false" noSleepMode="true" />
 		<skillList>
 			<skill id="4408" level="1" /> <!--HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!--MP Increase (1x) -->
@@ -1893,7 +1894,7 @@
 			<height normal="77.5" />
 		</collision>
 	</npc>	
-	<npc id="38135" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Daily Missions*" usingServerSideTitle="true" type="L2Npc">
+	<npc id="38135" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Daily Missions*" usingServerSideTitle="true" type="l2Merchant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1933,7 +1934,7 @@
 			<height normal="20.5" />
 		</collision>
 	</npc>
-	<npc id="38136" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="L2Npc">
+	<npc id="38136" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="l2Merchant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1973,7 +1974,7 @@
 			<height normal="20.5" />
 		</collision>
 	</npc>
-	<npc id="38137" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="L2Npc">
+	<npc id="38137" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="l2Merchant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />

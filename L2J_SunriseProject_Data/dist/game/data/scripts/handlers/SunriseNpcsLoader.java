@@ -7,6 +7,7 @@ import ai.sunriseNpc.BetaManager.BetaManager;
 import ai.sunriseNpc.CasinoManager.CasinoManager;
 import ai.sunriseNpc.CastleManager.CastleManager;
 import ai.sunriseNpc.DelevelManager.DelevelManager;
+import ai.sunriseNpc.EnchantManager.EnchantManager;
 import ai.sunriseNpc.GrandBossManager.GrandBossManager;
 import ai.sunriseNpc.NoblesseManager.NoblesseManager;
 import ai.sunriseNpc.PointsManager.PointsManager;
@@ -30,7 +31,8 @@ public class SunriseNpcsLoader extends ABLoader
 		NoblesseManager.class,
 		PointsManager.class,
 		PremiumManager.class,
-		ReportManager.class,		
+		ReportManager.class,
+		EnchantManager.class,
 	};
 	
 	public SunriseNpcsLoader()

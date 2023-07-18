@@ -53,17 +53,17 @@ public final class Kamaloka extends AbstractInstance
 	/*
 	 * Time after which instance without players will be destroyed Default: 5 minutes
 	 */
-	private static final int EMPTY_DESTROY_TIME = 5;
+	private static final int EMPTY_DESTROY_TIME = 2;
 	
 	/*
 	 * Time to destroy instance (and eject players away) after boss defeat Default: 5 minutes
 	 */
-	private static final int EXIT_TIME = 5;
+	private static final int EXIT_TIME = 2;
 	
 	/*
 	 * Maximum level difference between players level and kamaloka level Default: 5
 	 */
-	private static final int MAX_LEVEL_DIFFERENCE = 5;
+	private static final int MAX_LEVEL_DIFFERENCE = 10;
 	
 	/*
 	 * If true shaman in the first room will have same npcId as other mobs, making radar useless Default: true (but not retail like)

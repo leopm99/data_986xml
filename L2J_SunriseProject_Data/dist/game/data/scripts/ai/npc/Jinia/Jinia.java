@@ -30,6 +30,7 @@ import quests.Q10286_ReunionWithSirra.Q10286_ReunionWithSirra;
  */
 public final class Jinia extends AbstractNpcAI
 {
+	public static boolean FREYA_NO_QUEST = true;
 	// NPC
 	private static final int JINIA = 32781;
 	// Items
@@ -86,7 +87,7 @@ public final class Jinia extends AbstractNpcAI
 	@Override
 	public String onFirstTalk(L2Npc npc, L2PcInstance player)
 	{
-		if (player.isGM())
+		if (player.isGM() || (FREYA_NO_QUEST))
 		{
 			return "32781-02.html";
 		}

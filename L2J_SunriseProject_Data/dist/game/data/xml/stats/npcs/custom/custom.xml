@@ -114,6 +114,12 @@
 			<height normal="22" />
 		</collision>
 	</npc>
+	<npc id="576" displayId="13298" name="Enchant Manager" usingServerSideName="true" title="www.l2jsunrise.com" usingServerSideTitle="true" type="L2Npc">
+		<collision>
+			<radius normal="10" />
+			<height normal="22" />
+		</collision>
+	</npc>
 	<npc id="579" displayId="13298" name="Enchant Manager" usingServerSideName="true" title="www.l2jsunrise.com" usingServerSideTitle="true" type="L2Npc">
 		<collision>
 			<radius normal="10" />
