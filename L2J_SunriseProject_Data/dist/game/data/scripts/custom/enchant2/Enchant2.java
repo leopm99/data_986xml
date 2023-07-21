@@ -494,7 +494,7 @@ public class Enchant2 extends Quest
 				{
 					currentEnchant = item.getEnchantLevel();
 					
-					if (currentEnchant < 65535)
+					if (currentEnchant < 100)
 					{
 						newEnchantLevel = setEnchant(player, item, currentEnchant + 1, armorType);
 						
@@ -510,7 +510,7 @@ public class Enchant2 extends Quest
 					}
 					else
 					{
-						player.sendMessage("Your " + item.getItem().getName() + " is already +65535!");
+						player.sendMessage("Your " + item.getItem().getName() + " is already +100!");
 						return drawHtml("It's already +65535", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +65535!</center>", enchantType);
 					}
 					
@@ -571,7 +571,7 @@ public class Enchant2 extends Quest
 				{
 					currentEnchant = item.getEnchantLevel();
 					
-					if (currentEnchant < 65535)
+					if (currentEnchant < 100)
 					{
 						newEnchantLevel = setEnchant(player, item, currentEnchant + 10, armorType);
 						
@@ -587,7 +587,7 @@ public class Enchant2 extends Quest
 					}
 					else
 					{
-						player.sendMessage("Your " + item.getItem().getName() + " is already +65535!");
+						player.sendMessage("Your " + item.getItem().getName() + " is already +100!");
 						return drawHtml("It's already +65535", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +65535!</center>", enchantType);
 					}
 				}
@@ -640,7 +640,7 @@ public class Enchant2 extends Quest
 				{
 					currentEnchant = item.getEnchantLevel();
 					
-					if (currentEnchant < 65535)
+					if (currentEnchant < 100)
 					{
 						newEnchantLevel = setEnchant(player, item, currentEnchant + 50, armorType);
 						
@@ -656,7 +656,7 @@ public class Enchant2 extends Quest
 					}
 					else
 					{
-						player.sendMessage("Your " + item.getItem().getName() + " is already +65535!");
+						player.sendMessage("Your " + item.getItem().getName() + " is already +100!");
 						return drawHtml("It's already +65535", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +65535!</center>", enchantType);
 					}
 				} 

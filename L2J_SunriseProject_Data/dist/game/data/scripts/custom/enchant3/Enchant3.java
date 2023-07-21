@@ -18,7 +18,7 @@ public class Enchant3 extends Quest
 {
 	public static final Logger _log = Logger.getLogger(Enchant3.class.getName());
 	
-	private final static int npcId = 580;
+	private final static int npcId = 581;
 	
 	// Item required to enchant armor +1
 	private static int itemRequired = 0;
@@ -95,44 +95,44 @@ public class Enchant3 extends Quest
 				case A:
 					if (item.getItem().getBodyPart() == item.getItem().SLOT_R_HAND || item.getItem().getBodyPart() == item.getItem().SLOT_LR_HAND)
 					{
-						id = 729;					
+						id = 6569;					
 					}
 					else 
 					{
-						id = 730;
+						id = 6570;
 					}
 					itemRequired = id;
 					break;
 				case B:
 					if (item.getItem().getBodyPart() == item.getItem().SLOT_R_HAND || item.getItem().getBodyPart() == item.getItem().SLOT_LR_HAND)
 					{
-						id = 947;					
+						id = 6571;					
 					}
 					else
 					{
-						id = 948;					
+						id = 6572;					
 					}
 					itemRequired = id;
 					break;
 				case C:
 					if (item.getItem().getBodyPart() == item.getItem().SLOT_R_HAND || item.getItem().getBodyPart() == item.getItem().SLOT_LR_HAND)
 					{
-						id = 951;					
+						id = 6573;					
 					}
 					else
 					{
-						id = 952;					
+						id = 6574;					
 					}
 					itemRequired = id;
 					break;
 				case D:
 					if (item.getItem().getBodyPart() == item.getItem().SLOT_R_HAND || item.getItem().getBodyPart() == item.getItem().SLOT_LR_HAND)
 					{
-						id = 955;					
+						id = 6575;					
 					}
 					else
 					{
-						id = 956;					
+						id = 6576;					
 					}
 					itemRequired = id;
 					break;
@@ -141,11 +141,11 @@ public class Enchant3 extends Quest
 				case S84:
 					if (item.getItem().getBodyPart() == item.getItem().SLOT_R_HAND || item.getItem().getBodyPart() == item.getItem().SLOT_LR_HAND)
 					{
-						id = 959;					
+						id = 6577;					
 					}
 					else
 					{
-						id = 960;					
+						id = 6578;					
 					}
 					itemRequired = id;
 					break;
@@ -494,7 +494,7 @@ public class Enchant3 extends Quest
 				{
 					currentEnchant = item.getEnchantLevel();
 					
-					if (currentEnchant < 65535)
+					if (currentEnchant >= 100 && currentEnchant < 500)
 					{
 						newEnchantLevel = setEnchant(player, item, currentEnchant + 1, armorType);
 						
@@ -507,11 +507,16 @@ public class Enchant3 extends Quest
 							
 							return drawHtml("Congratulations!", htmlContent, enchantType);
 						}
+						else if (currentEnchant < 100) 
+						{
+							player.sendMessage("Your " + item.getItem().getName() + " it's not +100! Go to normal enchanter.");
+							return drawHtml("It's not +100", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> enchant it till +100 first!</center>", enchantType);	
+						}
 					}
 					else
 					{
-						player.sendMessage("Your " + item.getItem().getName() + " is already +65535!");
-						return drawHtml("It's already +65535", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +65535!</center>", enchantType);
+						player.sendMessage("Your " + item.getItem().getName() + " is already +500!");
+						return drawHtml("It's already +500", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +500!</center>", enchantType);
 					}
 					
 				}
@@ -571,7 +576,7 @@ public class Enchant3 extends Quest
 				{
 					currentEnchant = item.getEnchantLevel();
 					
-					if (currentEnchant < 65535)
+					if (currentEnchant >= 100 && currentEnchant < 500)
 					{
 						newEnchantLevel = setEnchant(player, item, currentEnchant + 10, armorType);
 						
@@ -585,10 +590,15 @@ public class Enchant3 extends Quest
 							return drawHtml("Congratulations!", htmlContent, enchantType);
 						}
 					}
+					else if (currentEnchant < 100) 
+					{
+						player.sendMessage("Your " + item.getItem().getName() + " it's not +100! Go to normal enchanter.");
+						return drawHtml("It's not +100", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> enchant it till +100 first!</center>", enchantType);	
+					}
 					else
 					{
-						player.sendMessage("Your " + item.getItem().getName() + " is already +65535!");
-						return drawHtml("It's already +65535", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +65535!</center>", enchantType);
+						player.sendMessage("Your " + item.getItem().getName() + " is already +500!");
+						return drawHtml("It's already +500", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +500!</center>", enchantType);
 					}
 				}
 			}			
@@ -640,7 +650,7 @@ public class Enchant3 extends Quest
 				{
 					currentEnchant = item.getEnchantLevel();
 					
-					if (currentEnchant < 65535)
+					if (currentEnchant >=100 && currentEnchant < 500)
 					{
 						newEnchantLevel = setEnchant(player, item, currentEnchant + 50, armorType);
 						
@@ -654,10 +664,15 @@ public class Enchant3 extends Quest
 							return drawHtml("Congratulations!", htmlContent, enchantType);
 						}
 					}
+					else if (currentEnchant < 100) 
+					{
+						player.sendMessage("Your " + item.getItem().getName() + " it's not +100! Go to normal enchanter.");
+						return drawHtml("It's not +100", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> enchant it till +100 first!</center>", enchantType);	
+					}
 					else
 					{
-						player.sendMessage("Your " + item.getItem().getName() + " is already +65535!");
-						return drawHtml("It's already +65535", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +65535!</center>", enchantType);
+						player.sendMessage("Your " + item.getItem().getName() + " is already +500!");
+						return drawHtml("It's already +500", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +500!</center>", enchantType);
 					}
 				} 
 			}

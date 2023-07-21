@@ -126,6 +126,18 @@
 			<height normal="22" />
 		</collision>
 	</npc>
+	<npc id="580" displayId="13298" name="Enchant Manager" usingServerSideName="true" title="www.l2jsunrise.com" usingServerSideTitle="true" type="L2Npc">
+		<collision>
+			<radius normal="10" />
+			<height normal="22" />
+		</collision>
+	</npc>
+	<npc id="581" displayId="13298" name="Enchant Manager" usingServerSideName="true" title="www.l2jsunrise.com" usingServerSideTitle="true" type="L2Npc">
+		<collision>
+			<radius normal="10" />
+			<height normal="22" />
+		</collision>
+	</npc>
 	<npc id="8983" displayId="21804" name="Chest" usingServerSideName="true" title="THunt" usingServerSideTitle="true" type="L2Monster">
 		<sex>MALE</sex>
 		<stats str="10" int="10" dex="10" wit="10" con="10" men="10">
