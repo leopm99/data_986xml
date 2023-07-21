@@ -60,7 +60,7 @@ public class CaveOfQueen extends Quest
 	// private static final int EGG_DEAD = 0;
 	
 	//@formatter:off
-	private static final int[] QUEEN_MOBIDS = {38002,38001,38000};
+	private static final int[] QUEEN_MOBIDS = {38106,38107,38108};
 	
 	// Doors/Walls/Zones
 	private static final int[][] ROOM_1_MOBS = {
@@ -385,7 +385,7 @@ public class CaveOfQueen extends Quest
 					// instance end
 					world.storeTime[1] = System.currentTimeMillis();
 					world.QUEEN = null;
-					Broadcast.toAllOnlinePlayers("The Cave of the Queen as been completed by brave heroes!");
+					Broadcast.toAllOnlinePlayers("The Cave of the Queen has been completed by brave heroes!");
 					addSpawn(ENDING_NPC, ENDING_NPC_SPAWN[0], ENDING_NPC_SPAWN[1], ENDING_NPC_SPAWN[2], 0, false, 0, false, world.getInstanceId());
 					
 					for (Integer pc : world.getAllowed())

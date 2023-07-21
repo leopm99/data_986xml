@@ -52,7 +52,7 @@ public class BehemothKing extends Quest
 	
 	// NPCs
 	private static final int ENTRANCE_NPC = 38135;
-	private static final int FINAL_NPC = 38138;
+	private static final int FINAL_NPC = 38136;
 	
 	// mobs
 	private static final int BEHEMOTH_BOSS = 38101;
@@ -93,8 +93,8 @@ public class BehemothKing extends Quest
 	private static final int[][] CRYSTAL_SPAWNS = {
 		{81000,-15440,-1810}
 	};
-	private static final int[][] BOSS_SPAWN = {{81561,-15432,-1837}};
-	private static final int[] FINAL_NPC_SPAWN = {79367,-16617,-819};
+	private static final int[][] BOSS_SPAWN = {{38101,81561,-15432,-1837}};
+	private static final int[] FINAL_NPC_SPAWN = {81561,-15432,-1837};
 	//@formatter:on
 	
 	// Instance reenter time

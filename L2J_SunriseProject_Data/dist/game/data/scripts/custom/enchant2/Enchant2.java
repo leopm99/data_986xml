@@ -1,4 +1,4 @@
-package custom.enchant;
+package custom.enchant2;
 
 import java.util.logging.Logger;
 
@@ -14,11 +14,11 @@ import l2r.gameserver.network.serverpackets.ExBrExtraUserInfo;
 import l2r.gameserver.network.serverpackets.InventoryUpdate;
 import l2r.gameserver.network.serverpackets.UserInfo;
 
-public class Enchant extends Quest
+public class Enchant2 extends Quest
 {
-	public static final Logger _log = Logger.getLogger(Enchant.class.getName());
+	public static final Logger _log = Logger.getLogger(Enchant2.class.getName());
 	
-	private final static int npcId = 579;
+	private final static int npcId = 580;
 	
 	// Item required to enchant armor +1
 	private static int itemRequired = 0;
@@ -29,7 +29,7 @@ public class Enchant extends Quest
 	
 	private L2ItemInstance itemInstance;
 	
-	public Enchant(int questId, String name, String descr)
+	public Enchant2(int questId, String name, String descr)
 	{
 		super(questId, name, descr);
 		
@@ -40,13 +40,13 @@ public class Enchant extends Quest
 	
 	public static void main(String[] args)
 	{
-		new Enchant(-1, Enchant.class.getSimpleName(), "custom");
+		new Enchant2(-1, Enchant2.class.getSimpleName(), "custom");
 	}
 	
 	@Override
 	public String onFirstTalk(L2Npc npc, L2PcInstance player)
 	{
-		String enchantType = "Enchant.htm";
+		String enchantType = "Enchant2.htm";
 		
 		if (player.getQuestState(getName()) == null)
 		{
@@ -69,7 +69,7 @@ public class Enchant extends Quest
 			return drawHtml("You are registered for Olympiad", "You can't use my services<br1>while playing the Olympiad.", enchantType);
 		}
 		
-		return "Enchant.htm";
+		return "Enchant2.htm";
 	}
 	
 	/**
@@ -175,7 +175,7 @@ public class Enchant extends Quest
 	{
 		String htmlText = event;
 		
-		String enchantType = "Enchant.htm";
+		String enchantType = "Enchant2.htm";
 		
 		int armorType = -1;
 		
@@ -183,7 +183,7 @@ public class Enchant extends Quest
 		if (event.equals("enchantHelmet1") || event.equals("enchantHelmet10") || event.equals("enchantHelmet50"))
 		{
 			armorType = Inventory.PAPERDOLL_HEAD;
-			enchantType = "EnchantArmor.htm";
+			enchantType = "EnchantArmor2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -204,7 +204,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantChest1") || event.equals("enchantChest10") || event.equals("enchantChest50"))
 		{
 			armorType = Inventory.PAPERDOLL_CHEST;
-			enchantType = "EnchantArmor.htm";
+			enchantType = "EnchantArmor2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -224,7 +224,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantLeggings1") || event.equals("enchantLeggings10") || event.equals("enchantLeggings50"))
 		{
 			armorType = Inventory.PAPERDOLL_LEGS;
-			enchantType = "EnchantArmor.htm";
+			enchantType = "EnchantArmor2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -244,7 +244,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantGloves1") || event.equals("enchantGloves10") || event.equals("enchantGloves50"))
 		{
 			armorType = Inventory.PAPERDOLL_GLOVES;
-			enchantType = "EnchantArmor.htm";
+			enchantType = "EnchantArmor2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -267,7 +267,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantBoots1") || event.equals("enchantBoots10") || event.equals("enchantBoots50"))
 		{
 			armorType = Inventory.PAPERDOLL_FEET;
-			enchantType = "EnchantArmor.htm";
+			enchantType = "EnchantArmor2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -287,7 +287,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantShieldOrSigil1") || event.equals("enchantShieldOrSigil10") || event.equals("enchantShieldOrSigil50"))
 		{
 			armorType = Inventory.PAPERDOLL_LHAND;
-			enchantType = "EnchantArmor.htm";
+			enchantType = "EnchantArmor2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -308,7 +308,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantUpperEarring1") || event.equals("enchantUpperEarring10") || event.equals("enchantUpperEarring50"))
 		{
 			armorType = Inventory.PAPERDOLL_LEAR;
-			enchantType = "EnchantJewels.htm";
+			enchantType = "EnchantJewels2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -328,7 +328,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantLowerEarring1") || event.equals("enchantLowerEarring10") || event.equals("enchantLowerEarring50"))
 		{
 			armorType = Inventory.PAPERDOLL_REAR;
-			enchantType = "EnchantJewels.htm";
+			enchantType = "EnchantJewels2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -348,7 +348,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantNecklace1") || event.equals("enchantNecklace10") || event.equals("enchantNecklace50"))
 		{
 			armorType = Inventory.PAPERDOLL_NECK;
-			enchantType = "EnchantJewels.htm";
+			enchantType = "EnchantJewels2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -368,7 +368,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantUpperRing1") || event.equals("enchantUpperRing10") || event.equals("enchantUpperRing50"))
 		{
 			armorType = Inventory.PAPERDOLL_LFINGER;
-			enchantType = "EnchantJewels.htm";
+			enchantType = "EnchantJewels2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -387,7 +387,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantLowerRing1") || event.equals("enchantLowerRing10") || event.equals("enchantLowerRing50"))
 		{
 			armorType = Inventory.PAPERDOLL_RFINGER;
-			enchantType = "EnchantJewels.htm";
+			enchantType = "EnchantJewels2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -407,7 +407,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantBelt1") || event.equals("enchantBelt10") || event.equals("enchantBelt50"))
 		{
 			armorType = Inventory.PAPERDOLL_BELT;
-			enchantType = "EnchantBeltShirt.htm";
+			enchantType = "EnchantBeltShirt2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -426,7 +426,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantShirt1") || event.equals("enchantShirt10") || event.equals("enchantShirt50"))
 		{
 			armorType = Inventory.PAPERDOLL_UNDER;
-			enchantType = "EnchantBeltShirt.htm";
+			enchantType = "EnchantBeltShirt2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -446,7 +446,7 @@ public class Enchant extends Quest
 		else if (event.equals("enchantWeapon1") || event.equals("enchantWeapon10") || event.equals("enchantWeapon50"))
 		{			
 			armorType = Inventory.PAPERDOLL_RHAND;
-			enchantType = "EnchantWeapon.htm";
+			enchantType = "EnchantWeapon2.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -518,46 +518,31 @@ public class Enchant extends Quest
 				
 			}			
 			
-			catch (ArrayIndexOutOfBoundsException e)
-			{
-				player.sendMessage("Something went wrong. Are equiped with the item?");
-				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are equiped with the item?</center>", enchantType);
-			}			
-			
 			catch (StringIndexOutOfBoundsException e)
 			{
 				player.sendMessage("Something went wrong. Are equiped with the item?");
-				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are equiped with the item?</center>", enchantType);
+				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are you equiped with the item?</center>", enchantType);
 			}
 			catch (NumberFormatException e)
 			{
 				player.sendMessage("Something went wrong. Are equiped with the item?");
-				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are equiped with the item?</center>", enchantType);
-			}
-			
-			
-			catch (NullPointerException e)
-			{
-				
-				player.sendMessage("Something went wrong. Are equiped with the item?");
-				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are equiped with the item?</center>", enchantType);
-			}
-			
+				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are you equiped with the item?</center>", enchantType);
+			}			
 			
 			player.sendMessage("Something went wrong. Are equiped with the item?");
-			return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are equiped with the item?</center>", enchantType);
+			return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are you equiped with the item?</center>", enchantType);
 		}	
 		
 		
-		String content = "<center>" + "Not enough <font color=\"FF7200\"> enchant scrolls </font>!<br>";
+		String content = "<center>" + "Not enough <font color=\"FF7200\">enchant scrolls</font>!<br>";
 		
 		if (st.getQuestItemsCount(itemRequired) > 0)
 		{
-			content += "You have " + st.getQuestItemsCount(itemRequired) + itemRequiredCount + ",<br1>" + "Need " + (itemRequiredCount - st.getQuestItemsCount(itemRequired)) + " more.";
+			content += "You have " + st.getQuestItemsCount(itemRequired) + itemRequiredCount + " enchant scrolls,<br1>" + " need " + (itemRequiredCount - st.getQuestItemsCount(itemRequired)) + " more.";
 		}
 		else
 		{			
-			content += "You need <font color=\"FF7200\">" + itemRequiredCount + " enchant scrolls </font>!";
+			content += "You need <font color=\"FF7200\"> 1 enchant scroll</font>!";
 		}
 		
 		
@@ -606,12 +591,7 @@ public class Enchant extends Quest
 						return drawHtml("It's already +65535", "<center>Your <font color=\"FF7200\">" + item.getItem().getName() + "</font> is already +65535!</center>", enchantType);
 					}
 				}
-			}
-			catch (NullPointerException e)
-			{
-				player.sendMessage("Something went wrong. Are equiped with the item?");
-				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are equiped with the item?</center>", enchantType);
-			}
+			}			
 			
 			catch (StringIndexOutOfBoundsException e)
 			{
@@ -631,11 +611,11 @@ public class Enchant extends Quest
 		
 		if (st.getQuestItemsCount(itemRequired) > 0)
 		{
-			content += "You have " + st.getQuestItemsCount(itemRequired) + "enchant scrolls,<br1>" + "Need " + ((itemRequiredCount * 10) - st.getQuestItemsCount(itemRequired)) + " more.";
+			content += "You have " + st.getQuestItemsCount(itemRequired) + " enchant scrolls,<br1>" + " need " + ((itemRequiredCount * 10) - st.getQuestItemsCount(itemRequired)) + " more.";
 		}
 		else
 		{
-			content += "You need <font color=\"FF7200\">" + itemRequiredCount + "enchant scrolls</font>!";
+			content += "You need <font color=\"FF7200\">10  enchant scrolls</font>!";
 		}
 		
 		content += "</center>";
@@ -684,26 +664,26 @@ public class Enchant extends Quest
 			catch (StringIndexOutOfBoundsException e)
 			{
 				player.sendMessage("Something went wrong. Are equiped with the item?");
-				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are equiped with the item?</center>", enchantType);
+				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are you equiped with the item?</center>", enchantType);
 			}
 			catch (NumberFormatException e)
 			{
 				player.sendMessage("Something went wrong. Are equiped with the item?");
-				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are equiped with the item?</center>", enchantType);
+				return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are you equiped with the item?</center>", enchantType);
 			}
 			
 			player.sendMessage("Something went wrong. Are equiped with the item?");
-			return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are equiped with the item?</center>", enchantType);
+			return drawHtml("Error Enchant", "<center>Something went wrong.<br>Are you equiped with the item?</center>", enchantType);
 		}
-		String content = "<center>" + "Not enough <font color=\"FF7200\">" + "enchant scrolls.</font>!<br>";
+		String content = "<center>" + "Not enough <font color=\"FF7200\">" + " enchant scrolls.</font>!<br>";
 		
 		if (st.getQuestItemsCount(itemRequired) > 0)
 		{
-			content += "You have " + st.getQuestItemsCount(itemRequired)  + "enchant scrolls,<br1>" + "Need " + ((itemRequiredCount * 50) - st.getQuestItemsCount(itemRequired)) + " more.";
+			content += "You have " + st.getQuestItemsCount(itemRequired)  + " enchant scrolls,<br1>" + " need " + ((itemRequiredCount * 50) - st.getQuestItemsCount(itemRequired)) + " more.";
 		}
 		else
 		{
-			content += "You need <font color=\"FF7200\">" + itemRequiredCount + "enchant scrolls</font>!";
+			content += "You need <font color=\"FF7200\"> 50 enchant scrolls</font>!";
 		}
 		
 		content += "</center>";
@@ -766,7 +746,7 @@ public class Enchant extends Quest
 	
 	public String drawHtml(String title, String content, String enchantType)
 	{
-		String html = "<html>" + "<title>Enchant Manager</title>" + "<body>" + "<center><img src=\"L2UI_CH3.herotower_deco\" width=256 height=32><br>" + "<font color=\"FF9900\">" + title + "</font></center><br>" + content + "<br><br>" + "<center><a action=\"bypass -h Quest Enchant " + enchantType + "\">Go Back</a></center>" + "</body>" + "</html>";
+		String html = "<html>" + "<title>Enchant Manager</title>" + "<body>" + "<center><img src=\"L2UI_CH3.herotower_deco\" width=256 height=32><br>" + "<font color=\"FF9900\">" + title + "</font></center><br>" + content + "<br><br>" + "<center><a action=\"bypass -h Quest Enchant2 " + enchantType + "\">Go Back</a></center>" + "</body>" + "</html>";
 		
 		return html;
 	}
