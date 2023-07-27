@@ -183,7 +183,7 @@ public class Enchant3 extends Quest
 		if (event.equals("enchantHelmet1") || event.equals("enchantHelmet10") || event.equals("enchantHelmet50"))
 		{
 			armorType = Inventory.PAPERDOLL_HEAD;
-			enchantType = "EnchantArmor2.htm";
+			enchantType = "EnchantArmor3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -204,7 +204,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantChest1") || event.equals("enchantChest10") || event.equals("enchantChest50"))
 		{
 			armorType = Inventory.PAPERDOLL_CHEST;
-			enchantType = "EnchantArmor2.htm";
+			enchantType = "EnchantArmor3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -224,7 +224,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantLeggings1") || event.equals("enchantLeggings10") || event.equals("enchantLeggings50"))
 		{
 			armorType = Inventory.PAPERDOLL_LEGS;
-			enchantType = "EnchantArmor2.htm";
+			enchantType = "EnchantArmor3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -244,7 +244,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantGloves1") || event.equals("enchantGloves10") || event.equals("enchantGloves50"))
 		{
 			armorType = Inventory.PAPERDOLL_GLOVES;
-			enchantType = "EnchantArmor2.htm";
+			enchantType = "EnchantArmor3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -267,7 +267,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantBoots1") || event.equals("enchantBoots10") || event.equals("enchantBoots50"))
 		{
 			armorType = Inventory.PAPERDOLL_FEET;
-			enchantType = "EnchantArmor2.htm";
+			enchantType = "EnchantArmor3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -287,7 +287,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantShieldOrSigil1") || event.equals("enchantShieldOrSigil10") || event.equals("enchantShieldOrSigil50"))
 		{
 			armorType = Inventory.PAPERDOLL_LHAND;
-			enchantType = "EnchantArmor2.htm";
+			enchantType = "EnchantArmor3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -308,7 +308,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantUpperEarring1") || event.equals("enchantUpperEarring10") || event.equals("enchantUpperEarring50"))
 		{
 			armorType = Inventory.PAPERDOLL_LEAR;
-			enchantType = "EnchantJewels2.htm";
+			enchantType = "EnchantJewels3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -328,7 +328,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantLowerEarring1") || event.equals("enchantLowerEarring10") || event.equals("enchantLowerEarring50"))
 		{
 			armorType = Inventory.PAPERDOLL_REAR;
-			enchantType = "EnchantJewels2.htm";
+			enchantType = "EnchantJewels3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -348,7 +348,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantNecklace1") || event.equals("enchantNecklace10") || event.equals("enchantNecklace50"))
 		{
 			armorType = Inventory.PAPERDOLL_NECK;
-			enchantType = "EnchantJewels2.htm";
+			enchantType = "EnchantJewels3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -368,7 +368,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantUpperRing1") || event.equals("enchantUpperRing10") || event.equals("enchantUpperRing50"))
 		{
 			armorType = Inventory.PAPERDOLL_LFINGER;
-			enchantType = "EnchantJewels2.htm";
+			enchantType = "EnchantJewels3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -387,7 +387,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantLowerRing1") || event.equals("enchantLowerRing10") || event.equals("enchantLowerRing50"))
 		{
 			armorType = Inventory.PAPERDOLL_RFINGER;
-			enchantType = "EnchantJewels2.htm";
+			enchantType = "EnchantJewels3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -407,7 +407,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantBelt1") || event.equals("enchantBelt10") || event.equals("enchantBelt50"))
 		{
 			armorType = Inventory.PAPERDOLL_BELT;
-			enchantType = "EnchantBeltShirt2.htm";
+			enchantType = "EnchantBeltShirt3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -426,7 +426,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantShirt1") || event.equals("enchantShirt10") || event.equals("enchantShirt50"))
 		{
 			armorType = Inventory.PAPERDOLL_UNDER;
-			enchantType = "EnchantBeltShirt2.htm";
+			enchantType = "EnchantBeltShirt3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
@@ -446,7 +446,7 @@ public class Enchant3 extends Quest
 		else if (event.equals("enchantWeapon1") || event.equals("enchantWeapon10") || event.equals("enchantWeapon50"))
 		{			
 			armorType = Inventory.PAPERDOLL_RHAND;
-			enchantType = "EnchantWeapon2.htm";
+			enchantType = "EnchantWeapon3.htm";
 			int item2 = getItemRequired(player, armorType);
 			
 			switch (htmlText)
