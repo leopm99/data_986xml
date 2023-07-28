@@ -1894,7 +1894,7 @@
 			<height normal="77.5" />
 		</collision>
 	</npc>	
-	<npc id="38135" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Daily Missions*" usingServerSideTitle="true" type="l2Merchant">
+	<npc id="38135" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Daily Missions*" usingServerSideTitle="true" type="L2Merchant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1934,7 +1934,7 @@
 			<height normal="20.5" />
 		</collision>
 	</npc>
-	<npc id="38136" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="l2Merchant">
+	<npc id="38136" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="L2Merchant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -1974,7 +1974,7 @@
 			<height normal="20.5" />
 		</collision>
 	</npc>
-	<npc id="38137" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="l2Merchant">
+	<npc id="38137" displayId="30969" level="85" name="Miguel" usingServerSideName="true" title="*Missions Manager*" usingServerSideTitle="true" type="L2Merchant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
@@ -2014,7 +2014,7 @@
 			<height normal="20.5" />
 		</collision>
 	</npc>
-	<npc id="38138" displayId="30358" level="85" name="Durander" usingServerSideName="true" title="*Epic Missions*" usingServerSideTitle="true" type="L2Npc">
+	<npc id="38138" displayId="30358" level="85" name="Durander" usingServerSideName="true" title="*Epic Missions*" usingServerSideTitle="true" type="L2Merchant">
 		<!-- Confirmed CT2.5 -->
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
