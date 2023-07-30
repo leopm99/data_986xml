@@ -44,25 +44,25 @@ public class DeathPassBloodAltar extends AbstractNpcAI
 	protected static final int[][] bossGroups =
 	{
 		{
-			25793,
+			38036,
 			69295,
 			118429,
 			-3483,
 			44090
 		},
 		{
-			25794,
+			38032,
 			69900,
 			118615,
 			-3478,
 			62107
 		},
 		{
-			25797,
-			69553,
-			119025,
-			-3456,
-			18154
+			38020,
+			69282,
+			119135,
+			-3471,
+			24224
 		}
 	};
 	
@@ -122,9 +122,9 @@ public class DeathPassBloodAltar extends AbstractNpcAI
 		
 		manageNpcs(true);
 		
-		addKillId(25793);
-		addKillId(25794);
-		addKillId(25797);
+		addKillId(38036);
+		addKillId(38032);
+		addKillId(38020);
 		
 		ThreadPoolManager.getInstance().scheduleGeneral(() -> changestatus(), delay);
 	}
@@ -235,17 +235,17 @@ public class DeathPassBloodAltar extends AbstractNpcAI
 	{
 		final int npcId = npc.getId();
 		
-		if (npcId == 25793)
+		if (npcId == 38036)
 		{
 			progress1 = true;
 		}
 		
-		if (npcId == 25794)
+		if (npcId == 38032)
 		{
 			progress2 = true;
 		}
 		
-		if (npcId == 25797)
+		if (npcId == 38020)
 		{
 			progress3 = true;
 		}

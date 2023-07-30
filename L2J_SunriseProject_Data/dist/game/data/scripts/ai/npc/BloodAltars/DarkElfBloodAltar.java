@@ -39,6 +39,7 @@ public class DarkElfBloodAltar extends AbstractNpcAI
 	
 	protected boolean progress1 = false;
 	protected boolean progress2 = false;
+	protected boolean progress3 = false;
 	
 	private static final int[][] bossGroups =
 	{
@@ -50,11 +51,18 @@ public class DarkElfBloodAltar extends AbstractNpcAI
 			63477
 		},
 		{
-			25750,
+			38026,
 			1450,
 			21744,
 			-3331,
 			31134
+		},
+		{
+			38033,
+			1792,
+			22100,
+			-3340,
+			21892
 		}
 	};
 	
@@ -115,7 +123,8 @@ public class DarkElfBloodAltar extends AbstractNpcAI
 		manageNpcs(true);
 		
 		addKillId(25750);
-		addKillId(25750);
+		addKillId(38026);
+		addKillId(38033);
 		
 		ThreadPoolManager.getInstance().scheduleGeneral(() -> changestatus(), delay);
 	}
@@ -231,16 +240,23 @@ public class DarkElfBloodAltar extends AbstractNpcAI
 			progress1 = true;
 		}
 		
-		if (npcId == 25750)
+		if (npcId == 38026)
 		{
 			progress2 = true;
 		}
 		
-		if (progress1 && progress2)
+		if (npcId == 38033)
+		{
+			progress3 = true;
+		}
+		
+		if (progress1 && progress2 && progress3)
 		{
 			ThreadPoolManager.getInstance().scheduleGeneral(() ->
 			{
 				progress1 = false;
+				progress2 = false;
+				progress3 = false;
 				
 				manageBosses(false);
 				manageNpcs(true);

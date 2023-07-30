@@ -39,6 +39,7 @@ public class GoddardBloodAltar extends AbstractNpcAI
 	
 	protected boolean progress1 = false;
 	protected boolean progress2 = false;
+	protected boolean progress3 = false;
 	
 	private static final int[][] bossGroups =
 	{
@@ -55,6 +56,13 @@ public class GoddardBloodAltar extends AbstractNpcAI
 			-58008,
 			-3477,
 			49151
+		},
+		{
+			38015,
+			152836,
+			-57623,
+			-3457,
+			62980
 		}
 	};
 	
@@ -116,6 +124,7 @@ public class GoddardBloodAltar extends AbstractNpcAI
 		
 		addKillId(25787);
 		addKillId(25790);
+		addKillId(38015);
 		
 		ThreadPoolManager.getInstance().scheduleGeneral(() -> changestatus(), delay);
 	}
@@ -218,7 +227,7 @@ public class GoddardBloodAltar extends AbstractNpcAI
 					ThreadPoolManager.getInstance().scheduleGeneral(() -> changestatus(), Config.RESPAWN_TIME * 60 * 1000);
 				}
 			}
-		} , 10000);
+		}, 10000);
 	}
 	
 	@Override
@@ -236,17 +245,23 @@ public class GoddardBloodAltar extends AbstractNpcAI
 			progress2 = true;
 		}
 		
-		if (progress1 && progress2)
+		if (npcId == 38015)
+		{
+			progress3 = true;
+		}
+		
+		if (progress1 && progress2 && progress3)
 		{
 			ThreadPoolManager.getInstance().scheduleGeneral(() ->
 			{
 				progress1 = false;
 				progress2 = false;
+				progress3 = false;
 				
 				manageBosses(false);
 				manageNpcs(true);
 				ThreadPoolManager.getInstance().scheduleGeneral(() -> changestatus(), Config.RESPAWN_TIME * 60 * 1000);
-			} , 30000);
+			}, 30000);
 		}
 		return super.onKill(npc, player, isSummon);
 	}

@@ -155,6 +155,26 @@
 		<ingredient id="1876" count="5" />
 		<production id="5550" count="1" />
 	</item>
+	<item>
+		<!-- Synthetic Cokes -->
+		<ingredient count="4" id="1888" />
+		<!-- Mold Glue -->
+		<ingredient count="4" id="4039" />
+		<!-- Mold Lubricant -->
+		<ingredient count="4" id="4040" />		
+		<!-- Maestro Anvil Lock -->
+		<production count="1" id="4046" />
+	</item>
+	<item>		
+		<!-- Varnish of Purity -->
+		<ingredient count="10" id="1887" />
+		<!-- Mold Lubricant -->
+		<ingredient count="10" id="4040" />
+		<!-- Mold Hardener -->
+		<ingredient count="10" id="4041" />		
+		<!-- Maestro Holder -->
+		<production count="1" id="4045" />
+	</item>
 	<!-- Leolin's Mold -->
 	<item>
 		<ingredient id="1884" count="40" />
@@ -182,5 +202,12 @@
 		<ingredient id="4039" count="10" />
 		<ingredient id="1868" count="20" />
 		<production id="5554" count="1" />
+	</item>
+	<!-- Maestro Mold -->
+	<item>
+		<ingredient id="1892" count="1" />
+		<ingredient id="4043" count="5" />
+		<ingredient id="4039" count="10" />
+		<production id="4048" count="1" />
 	</item>
 </list>
