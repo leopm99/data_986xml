@@ -401,7 +401,14 @@ public final class MinionSpawnManager extends AbstractNpcAI
 		NPC.add(29002); // Queen Ant Larva
 		NPC.add(38003); // Ashakiel
 		NPC.add(38006); // Soul Fire
-		NPC.add(38010); // White Eyed
+		NPC.add(38010); // Daimon the White-Eyed
+		NPC.add(38017); // Captain of Red Flag Shaka
+		NPC.add(38020); // Ember
+		NPC.add(38023); // Ghost of the Well Lidia
+		NPC.add(38026); // Kaysha Herald of Icarus
+		NPC.add(38029); // Soul Scavenger
+		NPC.add(38033); // Serpent Demon Bifrons
+		NPC.add(38036); // Beast Lord Behemoth
 	}
 	
 	private static final NpcStringId[] ON_ATTACK_MSG =
