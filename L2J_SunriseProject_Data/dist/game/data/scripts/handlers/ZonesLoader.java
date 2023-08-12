@@ -27,7 +27,7 @@ import ai.zone.StakatoNest.StakatoNest;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class ZonesLoader extends ABLoader
 {

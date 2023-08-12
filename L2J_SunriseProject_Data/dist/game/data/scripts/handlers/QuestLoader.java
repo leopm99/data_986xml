@@ -512,7 +512,7 @@ import quests.TerritoryWarScripts.TerritoryWarSuperClass;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public class QuestLoader extends ABLoader
 {

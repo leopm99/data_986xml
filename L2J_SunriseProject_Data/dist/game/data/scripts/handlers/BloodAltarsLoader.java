@@ -23,7 +23,7 @@ import ai.npc.BloodAltars.TalkingIslandBloodAltar;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class BloodAltarsLoader extends ABLoader
 {

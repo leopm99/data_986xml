@@ -21,7 +21,7 @@ import ai.npc.VillageMasters.SubclassCertification.SubclassCertification;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class VillageMastersLoader extends ABLoader
 {

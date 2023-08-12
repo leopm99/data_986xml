@@ -10,7 +10,7 @@ import vehicles.BoatTalkingGludin;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class VehiclesLoader extends ABLoader
 {

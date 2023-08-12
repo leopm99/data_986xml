@@ -44,7 +44,7 @@ import ai.individual.extra.ToiRaids.Kernon;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class IndividualLoader extends ABLoader
 {

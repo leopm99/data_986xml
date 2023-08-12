@@ -41,7 +41,7 @@ import ai.group_template.extra.ZombieGatekeepers;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class GroupTemplatesLoader extends ABLoader
 {

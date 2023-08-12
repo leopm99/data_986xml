@@ -41,7 +41,7 @@ import instances.Zaken.Zaken;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public class InstanceLoader extends ABLoader
 {

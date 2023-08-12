@@ -93,7 +93,7 @@ echo.
 echo. 
 echo.                            For more information or help:
 echo. 
-echo.                   1) visit our website: http://www.l2jsunrise.com
+echo.                   1) visit our website: http://
 echo.                      2) Or contact NeverMore , GodFather
 echo. 
 echo. 
@@ -742,7 +742,7 @@ echo.                           L2jSunrise
 echo.
 echo.
 echo Thanks for using our files.
-echo Visit http://www.l2jsunrise.com for more info about l2jsunrise.
+echo Visit http:// for more info about l2jsunrise.
 echo.
 echo.
 echo.

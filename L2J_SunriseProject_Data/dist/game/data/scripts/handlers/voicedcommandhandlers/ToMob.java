@@ -67,7 +67,7 @@ public class ToMob implements IVoicedCommandHandler
 			return false;
 		}
 		
-		if (command.equalsIgnoreCase(ToMob))
+		if (command.equalsIgnoreCase(_voicedCommands[0]))
 		{
 			if (target == null)
 			{

@@ -10,7 +10,7 @@ import gr.sr.interf.SunriseEvents;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public class TeleportsVCmd implements IVoicedCommandHandler
 {

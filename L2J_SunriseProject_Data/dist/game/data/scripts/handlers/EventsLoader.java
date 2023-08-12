@@ -9,7 +9,7 @@ import events.SquashEvent.SquashEvent;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class EventsLoader extends ABLoader
 {

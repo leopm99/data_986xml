@@ -16,7 +16,7 @@ import ai.modifier.dropEngine.FortressReward;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class ModifiersLoader extends ABLoader
 {

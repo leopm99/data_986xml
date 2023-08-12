@@ -1,3 +1,5 @@
+/quests/
+/vehicles/
 /ai/
 /conquerablehalls/
 /custom/
@@ -7,5 +9,4 @@
 /handlers/
 /hellbound/
 /instances/
-/quests/
-/vehicles/
+/custom.instancemaster/

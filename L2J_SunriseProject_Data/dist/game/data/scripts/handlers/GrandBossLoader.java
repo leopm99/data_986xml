@@ -14,7 +14,7 @@ import ai.grandboss.Valakas.Valakas;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class GrandBossLoader extends ABLoader
 {

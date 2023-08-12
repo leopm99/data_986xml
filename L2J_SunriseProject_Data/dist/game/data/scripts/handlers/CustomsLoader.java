@@ -15,7 +15,7 @@ import handlers.custom.CustomAnnouncePkPvP;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class CustomsLoader extends ABLoader
 {

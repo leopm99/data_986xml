@@ -16,7 +16,7 @@ import ai.npc.AbstractNpcAI;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public class AchievementManager extends AbstractNpcAI
 {

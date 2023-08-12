@@ -82,6 +82,43 @@
 		<node X="55696" Y="28496" />
 		<node X="43976" Y="24664" />
 	</zone>
+	<zone name="boss_area_valakas" type="BossZone" shape="NPoly" minZ="-3753" maxZ="32767">
+		<node X="196710" Y="-130845" />
+		<node X="228895" Y="-130845" />
+		<node X="229126" Y="-96162" />
+		<node X="196478" Y="-98187" />
+	</zone>
+	<zone name="boss_area_valakas2" type="BossZone" shape="NPoly" minZ="-3753" maxZ="32767">
+		<node X="183634" Y="-115085" />
+		<node X="183634" Y="-114885" />
+		<node X="184000" Y="-115085" />
+		<node X="184000" Y="-114885" />
+	</zone>
+	<zone name="boss_area_antharas" type="BossZone" shape="NPoly" minZ="-8380" maxZ="-4880">
+		<node X="173469" Y="110431" />
+		<node X="188081" Y="110284" />
+		<node X="188132" Y="119249" />
+		<node X="173386" Y="119391" />
+	</zone>
+	<zone name="boss_area_valakas" type="BossZone" shape="NPoly" minZ="-2572" maxZ="5428">
+		<node X="196866" Y="-130845" />
+		<node X="229289" Y="-130860" />
+		<node X="229176" Y="-98508" />
+		<node X="196880" Y="-98498" />
+	</zone>
+	<zone name="boss_area_baium" type="BossZone" shape="NPoly" minZ="10061" maxZ="11061">
+		<node X="111074" Y="16177" />
+		<node X="114562" Y="12623" />
+		<node X="118194" Y="15790" />
+		<node X="114825" Y="19589" />
+	</zone>
+	<zone name="beleth_chamber_zone" id="70053" type="BossZone" shape="NPoly" minZ="-10412" maxZ="-5112">		
+		
+		<node X="11214" Y="205578" />
+		<node X="20607" Y="205578" />
+		<node X="20648" Y="220271" />
+		<node X="11172" Y="220271" />
+	</zone>
 	<zone id="12014" name="Altar of Sacrifice" type="BossZone" shape="Cuboid" minZ="-10730" maxZ="-10290"> <!-- Not Verified -->
 		<stat name="default_enabled" val="false" />
 		<stat name="InvadeTime" val="1800000" />

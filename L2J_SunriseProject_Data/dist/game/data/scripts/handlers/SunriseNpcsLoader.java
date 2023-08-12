@@ -16,7 +16,7 @@ import ai.sunriseNpc.ReportManager.ReportManager;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public class SunriseNpcsLoader extends ABLoader
 {

@@ -25,7 +25,7 @@ import handlers.ZonesLoader;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class GlobalLoader extends ABLoader
 {

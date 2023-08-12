@@ -6,7 +6,7 @@ import features.SkillTransfer.SkillTransfer;
 
 /**
  * @author L2jSunrise Team
- * @Website www.l2jsunrise.com
+ * @Website 
  */
 public final class FeaturesLoader extends ABLoader
 {

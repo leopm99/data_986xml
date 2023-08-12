@@ -309,6 +309,7 @@ import handlers.voicedcommandhandlers.PingVCmd;
 import handlers.voicedcommandhandlers.PremiumVCmd;
 import handlers.voicedcommandhandlers.PvpZoneVCmd;
 import handlers.voicedcommandhandlers.RepairVCmd;
+import handlers.voicedcommandhandlers.Res;
 import handlers.voicedcommandhandlers.SevenRB;
 import handlers.voicedcommandhandlers.TeleportsVCmd;
 import handlers.voicedcommandhandlers.ToMob;
@@ -671,6 +672,7 @@ public class MasterHandler
 		CombineTalismans.class,
 		OpenAtod.class,
 		(Config.TELEPORT_TO_MOB_COMMAND ? ToMob.class : null),
+		(Config.COMMAND_RES ? Res.class : null),
 	};
 	
 	private void loadHandlers(IHandler<?, ?> handler, Class<?>[] classes)
